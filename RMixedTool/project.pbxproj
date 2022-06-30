@@ -1,0 +1,2559 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		150932C7E41B392288043163 /* Pods_Tunnel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F14BC0865994C8285EE6DD /* Pods_Tunnel.framework */; };
+		331CDD0E57FC9C08EE13A66F /* Pods_YLADCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB174AFF715DF2E1677E5114 /* Pods_YLADCommon.framework */; };
+		59DF45BBF5FD2600C55A98FE /* Pods_YGCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E62396D8492B036DC460AC /* Pods_YGCommon.framework */; };
+		7BDB16D528FD2234E0F8D79E /* Pods_bypass_melon_vpn_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28E61EA34FC33F7BE14D745A /* Pods_bypass_melon_vpn_ios.framework */; };
+		E40177F32653B8AD002CF86D /* melon_ic_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40177F22653B8AD002CF86D /* melon_ic_close@2x.png */; };
+		E40254E0266F4264009626EE /* YLSub.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40254DF266F4264009626EE /* YLSub.swift */; };
+		E40254E4266F4AE1009626EE /* cell_vip_hot.xib in Resources */ = {isa = PBXBuildFile; fileRef = E40254E3266F4AE1009626EE /* cell_vip_hot.xib */; };
+		E40254E6266F4C17009626EE /* cell_vip_normal.xib in Resources */ = {isa = PBXBuildFile; fileRef = E40254E5266F4C17009626EE /* cell_vip_normal.xib */; };
+		E40254E8266F51E2009626EE /* cell_footer.xib in Resources */ = {isa = PBXBuildFile; fileRef = E40254E7266F51E2009626EE /* cell_footer.xib */; };
+		E40531F926365525001B35C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40531F826365525001B35C0 /* AppDelegate.swift */; };
+		E40531FB26365525001B35C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40531FA26365525001B35C0 /* SceneDelegate.swift */; };
+		E40531FD26365525001B35C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40531FC26365525001B35C0 /* ViewController.swift */; };
+		E405320026365525001B35C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E40531FE26365525001B35C0 /* Main.storyboard */; };
+		E405320226365526001B35C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E405320126365526001B35C0 /* Assets.xcassets */; };
+		E405320526365526001B35C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E405320326365526001B35C0 /* LaunchScreen.storyboard */; };
+		E4053226263655FE001B35C0 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E40532132636553B001B35C0 /* NetworkExtension.framework */; };
+		E4053235263656EC001B35C0 /* YGCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E405322E263656EC001B35C0 /* YGCommon.framework */; };
+		E4053236263656EC001B35C0 /* YGCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E405322E263656EC001B35C0 /* YGCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E40532482636574A001B35C0 /* YgCommonDefaultKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = E405323D2636574A001B35C0 /* YgCommonDefaultKey.swift */; };
+		E40532492636574A001B35C0 /* SocksSecurityUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = E405323E2636574A001B35C0 /* SocksSecurityUtil.swift */; };
+		E405324A2636574A001B35C0 /* YGCommonInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E405323F2636574A001B35C0 /* YGCommonInit.swift */; };
+		E405324B2636574A001B35C0 /* SwiftyUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40532402636574A001B35C0 /* SwiftyUserDefaults.swift */; };
+		E405324C2636574A001B35C0 /* CryptoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40532412636574A001B35C0 /* CryptoUtils.swift */; };
+		E405324D2636574A001B35C0 /* ic_x0302.png in Resources */ = {isa = PBXBuildFile; fileRef = E40532422636574A001B35C0 /* ic_x0302.png */; };
+		E405324E2636574A001B35C0 /* YGCommonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40532432636574A001B35C0 /* YGCommonHelper.swift */; };
+		E405324F2636574A001B35C0 /* SecretKeyGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40532442636574A001B35C0 /* SecretKeyGenerator.swift */; };
+		E40532512636574A001B35C0 /* YGLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40532462636574A001B35C0 /* YGLogger.swift */; };
+		E4053264263657AC001B35C0 /* YLServerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4053261263657AC001B35C0 /* YLServerManager.swift */; };
+		E4053265263657AC001B35C0 /* YLUnity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4053262263657AC001B35C0 /* YLUnity.swift */; };
+		E4053266263657AC001B35C0 /* YLServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4053263263657AC001B35C0 /* YLServer.swift */; };
+		E405326C263657CC001B35C0 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E405326A263657CC001B35C0 /* RootViewController.swift */; };
+		E405326D263657CC001B35C0 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E405326B263657CC001B35C0 /* RootViewController.xib */; };
+		E4053279263657EF001B35C0 /* YLVPNCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = E4053277263657EF001B35C0 /* YLVPNCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E405327C263657EF001B35C0 /* YLVPNCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4053275263657EF001B35C0 /* YLVPNCommon.framework */; };
+		E405327D263657EF001B35C0 /* YLVPNCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E4053275263657EF001B35C0 /* YLVPNCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E405328826365808001B35C0 /* Pollution.swift in Sources */ = {isa = PBXBuildFile; fileRef = E405328426365808001B35C0 /* Pollution.swift */; };
+		E405328926365808001B35C0 /* YLVPNConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E405328526365808001B35C0 /* YLVPNConfigManager.swift */; };
+		E405328A26365808001B35C0 /* YLVPNConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E405328626365808001B35C0 /* YLVPNConfig.swift */; };
+		E40532C826365A7F001B35C0 /* YGCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = E40532C626365A5E001B35C0 /* YGCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E40532C926365A7F001B35C0 /* YGCommon-Bridge-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = E40532452636574A001B35C0 /* YGCommon-Bridge-Header.h */; };
+		E40532E926365D8C001B35C0 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E40532132636553B001B35C0 /* NetworkExtension.framework */; };
+		E40532ED26365D8C001B35C0 /* PacketTunnelProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = E40532EC26365D8C001B35C0 /* PacketTunnelProvider.m */; };
+		E40532F226365D8C001B35C0 /* Tunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E40532E826365D8C001B35C0 /* Tunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E40532FC26365E3B001B35C0 /* dns.m in Sources */ = {isa = PBXBuildFile; fileRef = E40532FB26365E3B001B35C0 /* dns.m */; };
+		E40532FD26365E56001B35C0 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E40532CB26365AC6001B35C0 /* libresolv.tbd */; };
+		E40532FF26365EA4001B35C0 /* YGCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E405322E263656EC001B35C0 /* YGCommon.framework */; };
+		E405330B26368F4B001B35C0 /* YLServerConfigure.swift in Sources */ = {isa = PBXBuildFile; fileRef = E405330A26368F4B001B35C0 /* YLServerConfigure.swift */; };
+		E405330D26368F66001B35C0 /* YLServerArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = E405330C26368F66001B35C0 /* YLServerArea.swift */; };
+		E405331026369EFE001B35C0 /* YLHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E405330E26369EFE001B35C0 /* YLHomeViewController.swift */; };
+		E405331126369EFE001B35C0 /* YLHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E405330F26369EFE001B35C0 /* YLHomeViewController.xib */; };
+		E405332826369FF9001B35C0 /* ic_guide_time.png in Resources */ = {isa = PBXBuildFile; fileRef = E405331426369FF9001B35C0 /* ic_guide_time.png */; };
+		E405332A26369FF9001B35C0 /* ic_upload.png in Resources */ = {isa = PBXBuildFile; fileRef = E405331626369FF9001B35C0 /* ic_upload.png */; };
+		E405332C26369FF9001B35C0 /* ic_test_network.png in Resources */ = {isa = PBXBuildFile; fileRef = E405331826369FF9001B35C0 /* ic_test_network.png */; };
+		E405332D26369FF9001B35C0 /* ic_guide_hand.png in Resources */ = {isa = PBXBuildFile; fileRef = E405331926369FF9001B35C0 /* ic_guide_hand.png */; };
+		E405332E26369FF9001B35C0 /* ic_vip_home.png in Resources */ = {isa = PBXBuildFile; fileRef = E405331A26369FF9001B35C0 /* ic_vip_home.png */; };
+		E405332F26369FF9001B35C0 /* ic_viptime_video备份.png in Resources */ = {isa = PBXBuildFile; fileRef = E405331B26369FF9001B35C0 /* ic_viptime_video备份.png */; };
+		E405333126369FF9001B35C0 /* ic_home_ad.png in Resources */ = {isa = PBXBuildFile; fileRef = E405331D26369FF9001B35C0 /* ic_home_ad.png */; };
+		E405333226369FF9001B35C0 /* ic_download.png in Resources */ = {isa = PBXBuildFile; fileRef = E405331E26369FF9001B35C0 /* ic_download.png */; };
+		E405333326369FF9001B35C0 /* ic_back.png in Resources */ = {isa = PBXBuildFile; fileRef = E405331F26369FF9001B35C0 /* ic_back.png */; };
+		E405333426369FF9001B35C0 /* ic_fix_network.png in Resources */ = {isa = PBXBuildFile; fileRef = E405332026369FF9001B35C0 /* ic_fix_network.png */; };
+		E405333526369FF9001B35C0 /* ic_home_time.png in Resources */ = {isa = PBXBuildFile; fileRef = E405332126369FF9001B35C0 /* ic_home_time.png */; };
+		E405333626369FF9001B35C0 /* ic_viptime_video.png in Resources */ = {isa = PBXBuildFile; fileRef = E405332226369FF9001B35C0 /* ic_viptime_video.png */; };
+		E405333926369FF9001B35C0 /* ic_guide_vip.png in Resources */ = {isa = PBXBuildFile; fileRef = E405332526369FF9001B35C0 /* ic_guide_vip.png */; };
+		E405333D2636A2B2001B35C0 /* YLColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E405333C2636A2B2001B35C0 /* YLColor.swift */; };
+		E405333F2636A7D6001B35C0 /* img_watermelon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E405333E2636A7D6001B35C0 /* img_watermelon@2x.png */; };
+		E40533412636A902001B35C0 /* ic_info@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E40533402636A902001B35C0 /* ic_info@2x.png */; };
+		E405334A2636ADE6001B35C0 /* YLLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40533492636ADE6001B35C0 /* YLLabel.swift */; };
+		E405334C2636AE80001B35C0 /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = E405334B2636AE80001B35C0 /* Localized.swift */; };
+		E405335D2636B081001B35C0 /* Countries.strings in Resources */ = {isa = PBXBuildFile; fileRef = E405334E2636B081001B35C0 /* Countries.strings */; };
+		E405335E2636B081001B35C0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E40533502636B081001B35C0 /* Localizable.strings */; };
+		E40533602636B87E001B35C0 /* ic_little_melon.png in Resources */ = {isa = PBXBuildFile; fileRef = E405335F2636B87D001B35C0 /* ic_little_melon.png */; };
+		E40C94FA265F7F2000D44B24 /* YLEventHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40C94F9265F7F2000D44B24 /* YLEventHelper.swift */; };
+		E40C94FC265F7FFE00D44B24 /* YLADUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E40C94FB265F7FFE00D44B24 /* YLADUnit.swift */; };
+		E40C9503265F907600D44B24 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E40C9502265F907600D44B24 /* GoogleService-Info.plist */; };
+		E4131429264E0E2E00CE17D1 /* YLThreeSDKConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4131428264E0E2E00CE17D1 /* YLThreeSDKConfig.swift */; };
+		E413934E267C434A00067738 /* melon_img_vip_02.png in Resources */ = {isa = PBXBuildFile; fileRef = E413934C267C434A00067738 /* melon_img_vip_02.png */; };
+		E413934F267C434A00067738 /* melon_img_vip_01.png in Resources */ = {isa = PBXBuildFile; fileRef = E413934D267C434A00067738 /* melon_img_vip_01.png */; };
+		E4139351267C509B00067738 /* melon_ic_vip_get.png in Resources */ = {isa = PBXBuildFile; fileRef = E4139350267C509B00067738 /* melon_ic_vip_get.png */; };
+		E4139357267C737300067738 /* YLVIPThreeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4139356267C737300067738 /* YLVIPThreeView.xib */; };
+		E4139359267C742800067738 /* melon_img_popup_vip.png in Resources */ = {isa = PBXBuildFile; fileRef = E4139358267C742800067738 /* melon_img_popup_vip.png */; };
+		E413935B267C80BB00067738 /* melon_img_popup_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E413935A267C80BB00067738 /* melon_img_popup_bg.png */; };
+		E41407E2264CCE1500024D32 /* NativeAppInstallAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E41407E1264CCE1500024D32 /* NativeAppInstallAdView.xib */; };
+		E41407E4264CEB7000024D32 /* LiveLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41407E3264CEB7000024D32 /* LiveLabel.swift */; };
+		E41407E6264CED8E00024D32 /* YoConfigKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41407E5264CED8E00024D32 /* YoConfigKeys.swift */; };
+		E415CA1D267C9A9400B780BD /* melon_crown_data.json in Resources */ = {isa = PBXBuildFile; fileRef = E415CA1C267C9A9400B780BD /* melon_crown_data.json */; };
+		E419B564263909C500220F1B /* ic_smart.png in Resources */ = {isa = PBXBuildFile; fileRef = E419B563263909C500220F1B /* ic_smart.png */; };
+		E419B57326390FB300220F1B /* YLNetHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E419B57226390FB300220F1B /* YLNetHelper.m */; };
+		E41E49B0264B7642003DEF31 /* YLVPNCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4053275263657EF001B35C0 /* YLVPNCommon.framework */; };
+		E41E49B7264B76F0003DEF31 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E40532132636553B001B35C0 /* NetworkExtension.framework */; };
+		E41E49B8264B7758003DEF31 /* ShadowPath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E405329D263658C3001B35C0 /* ShadowPath.framework */; };
+		E41E49BB264B777F003DEF31 /* ShadowPath.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E405329D263658C3001B35C0 /* ShadowPath.framework */; };
+		E41E49BC264B777F003DEF31 /* ShadowPath.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E405329D263658C3001B35C0 /* ShadowPath.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E41E53322653621000329E67 /* YLLoading.xib in Resources */ = {isa = PBXBuildFile; fileRef = E41E53312653621000329E67 /* YLLoading.xib */; };
+		E41E53352653690A00329E67 /* loading@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E41E53342653690A00329E67 /* loading@2x.png */; };
+		E41E533726536A0400329E67 /* YLLoading.swift in Sources */ = {isa = PBXBuildFile; fileRef = E41E533626536A0400329E67 /* YLLoading.swift */; };
+		E4240E5C264A19E0003CBD9C /* UIFullScreeAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4240E5B264A19E0003CBD9C /* UIFullScreeAlert.swift */; };
+		E4240E5E264A19EF003CBD9C /* UIFullScreeAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4240E5D264A19EF003CBD9C /* UIFullScreeAlert.xib */; };
+		E4240E6C264A1BBA003CBD9C /* ic_popup_watch_whole_video.png in Resources */ = {isa = PBXBuildFile; fileRef = E4240E61264A1BBA003CBD9C /* ic_popup_watch_whole_video.png */; };
+		E4240E6D264A1BBA003CBD9C /* ic_viptime_video_1.png in Resources */ = {isa = PBXBuildFile; fileRef = E4240E62264A1BBA003CBD9C /* ic_viptime_video_1.png */; };
+		E4240E6E264A1BBA003CBD9C /* ic_popup_connect_2h.png in Resources */ = {isa = PBXBuildFile; fileRef = E4240E63264A1BBA003CBD9C /* ic_popup_connect_2h.png */; };
+		E4240E72264A1BBA003CBD9C /* ic_popup_ad.png in Resources */ = {isa = PBXBuildFile; fileRef = E4240E67264A1BBA003CBD9C /* ic_popup_ad.png */; };
+		E4240E73264A1BBA003CBD9C /* ic_guide_word.png in Resources */ = {isa = PBXBuildFile; fileRef = E4240E68264A1BBA003CBD9C /* ic_guide_word.png */; };
+		E4240E74264A1BBA003CBD9C /* ic_vip_arrows.png in Resources */ = {isa = PBXBuildFile; fileRef = E4240E69264A1BBA003CBD9C /* ic_vip_arrows.png */; };
+		E4240E75264A1BBA003CBD9C /* ic_popup_4h.png in Resources */ = {isa = PBXBuildFile; fileRef = E4240E6A264A1BBA003CBD9C /* ic_popup_4h.png */; };
+		E4240E77264A2924003CBD9C /* viewAlertShowVideo.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4240E76264A2924003CBD9C /* viewAlertShowVideo.xib */; };
+		E42E75B226720DEA008ABED9 /* ic_retry_purchase.png in Resources */ = {isa = PBXBuildFile; fileRef = E42E75B126720DEA008ABED9 /* ic_retry_purchase.png */; };
+		E43456262643C38200520426 /* WebViewVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43456242643C38200520426 /* WebViewVC.storyboard */; };
+		E43456272643C38200520426 /* WebViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43456252643C38200520426 /* WebViewVC.swift */; };
+		E434562E2643C3AC00520426 /* FaqExpandsionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43456292643C3AC00520426 /* FaqExpandsionCell.swift */; };
+		E434562F2643C3AC00520426 /* FaqDO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E434562A2643C3AC00520426 /* FaqDO.swift */; };
+		E43456302643C3AC00520426 /* FaqVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E434562B2643C3AC00520426 /* FaqVC.swift */; };
+		E43456322643C3AC00520426 /* FaqDefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E434562D2643C3AC00520426 /* FaqDefaultCell.swift */; };
+		E43456382643C3E000520426 /* GADConsentHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43456342643C3E000520426 /* GADConsentHelper.swift */; };
+		E43456392643C3E000520426 /* ConsentCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43456352643C3E000520426 /* ConsentCard.swift */; };
+		E434563A2643C3E000520426 /* ConsentCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = E43456362643C3E000520426 /* ConsentCard.xib */; };
+		E434563B2643C3E000520426 /* ConsentAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43456372643C3E000520426 /* ConsentAlert.swift */; };
+		E434563F2643C4E700520426 /* ServerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E434563D2643C4E700520426 /* ServerConstants.swift */; };
+		E43456402643C4E700520426 /* YogaConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E434563E2643C4E700520426 /* YogaConstants.swift */; };
+		E434564E2643C52800520426 /* MailHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43456422643C52800520426 /* MailHelper.swift */; };
+		E43456502643C52800520426 /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43456442643C52800520426 /* ViewUtils.swift */; };
+		E43456512643C52800520426 /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43456452643C52800520426 /* ColorUtils.swift */; };
+		E43456522643C52800520426 /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43456462643C52800520426 /* AppUtils.swift */; };
+		E43456552643C52800520426 /* InviteFriendsUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = E434564B2643C52800520426 /* InviteFriendsUtil.swift */; };
+		E43456562643C52800520426 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E434564C2643C52800520426 /* LocationManager.swift */; };
+		E43456572643C52800520426 /* JumpAppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E434564D2643C52800520426 /* JumpAppHelper.swift */; };
+		E434565D2643C5C700520426 /* MKCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43456592643C5C700520426 /* MKCollectionViewCell.swift */; };
+		E434565E2643C5C700520426 /* MKTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E434565A2643C5C700520426 /* MKTableViewCell.swift */; };
+		E434565F2643C5C700520426 /* MKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E434565B2643C5C700520426 /* MKButton.swift */; };
+		E43456602643C5C700520426 /* MKLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E434565C2643C5C700520426 /* MKLayer.swift */; };
+		E43456652643C8CB00520426 /* RatingStarAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43456622643C8CB00520426 /* RatingStarAlert.swift */; };
+		E43456662643C8CB00520426 /* RatingStarCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43456632643C8CB00520426 /* RatingStarCard.swift */; };
+		E43456672643C8CB00520426 /* RatingStarCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = E43456642643C8CB00520426 /* RatingStarCard.xib */; };
+		E434566D2643CB1B00520426 /* ToastWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43456692643CB1B00520426 /* ToastWindow.swift */; };
+		E434566E2643CB1B00520426 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E434566A2643CB1B00520426 /* ToastView.swift */; };
+		E434566F2643CB1B00520426 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = E434566B2643CB1B00520426 /* Toast.swift */; };
+		E43456702643CB1B00520426 /* ToastCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E434566C2643CB1B00520426 /* ToastCenter.swift */; };
+		E43456722643CC1200520426 /* cellMore.xib in Resources */ = {isa = PBXBuildFile; fileRef = E43456712643CC1200520426 /* cellMore.xib */; };
+		E4485B7E2637BAE40048F6C5 /* YLVPNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4485B7D2637BAE40048F6C5 /* YLVPNManager.swift */; };
+		E4485B812637E3D50048F6C5 /* ic_button_plus_30mins.png in Resources */ = {isa = PBXBuildFile; fileRef = E4485B7F2637E3D40048F6C5 /* ic_button_plus_30mins.png */; };
+		E4485B822637E3D50048F6C5 /* ic_button_plus_2hour.png in Resources */ = {isa = PBXBuildFile; fileRef = E4485B802637E3D40048F6C5 /* ic_button_plus_2hour.png */; };
+		E4485B852637E3ED0048F6C5 /* ic_home_regions.png in Resources */ = {isa = PBXBuildFile; fileRef = E4485B832637E3ED0048F6C5 /* ic_home_regions.png */; };
+		E4485B862637E3ED0048F6C5 /* ic_home_setting.png in Resources */ = {isa = PBXBuildFile; fileRef = E4485B842637E3ED0048F6C5 /* ic_home_setting.png */; };
+		E4485B882637E4AC0048F6C5 /* YLUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4485B872637E4AC0048F6C5 /* YLUserManager.swift */; };
+		E4485B8B2637F8010048F6C5 /* YLServerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4485B892637F8010048F6C5 /* YLServerListViewController.swift */; };
+		E4485B8C2637F8010048F6C5 /* YLServerListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4485B8A2637F8010048F6C5 /* YLServerListViewController.xib */; };
+		E4485B8E2637FA410048F6C5 /* cellServerList.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4485B8D2637FA410048F6C5 /* cellServerList.xib */; };
+		E4485BAC2637FB840048F6C5 /* ic_server_select.png in Resources */ = {isa = PBXBuildFile; fileRef = E4485BA32637FB840048F6C5 /* ic_server_select.png */; };
+		E4485BAD2637FB840048F6C5 /* ic_servers_video.png in Resources */ = {isa = PBXBuildFile; fileRef = E4485BA42637FB840048F6C5 /* ic_servers_video.png */; };
+		E4485BAE2637FB840048F6C5 /* ic_servers_ad.png in Resources */ = {isa = PBXBuildFile; fileRef = E4485BA52637FB840048F6C5 /* ic_servers_ad.png */; };
+		E4485BAF2637FB840048F6C5 /* ic_refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = E4485BA62637FB840048F6C5 /* ic_refresh.png */; };
+		E4485BB02637FB840048F6C5 /* ic_fold.png in Resources */ = {isa = PBXBuildFile; fileRef = E4485BA72637FB840048F6C5 /* ic_fold.png */; };
+		E4485BB12637FB840048F6C5 /* ic_server_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = E4485BA82637FB840048F6C5 /* ic_server_normal.png */; };
+		E4485BB22637FB840048F6C5 /* ic_vip.png in Resources */ = {isa = PBXBuildFile; fileRef = E4485BA92637FB840048F6C5 /* ic_vip.png */; };
+		E4485BB62637FF350048F6C5 /* cellServerListHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4485BB52637FF350048F6C5 /* cellServerListHeader.xib */; };
+		E4485BBD26381BF50048F6C5 /* ic_signal_1.png in Resources */ = {isa = PBXBuildFile; fileRef = E4485BB726381BF40048F6C5 /* ic_signal_1.png */; };
+		E4485BBE26381BF50048F6C5 /* ic_signal_2.png in Resources */ = {isa = PBXBuildFile; fileRef = E4485BB826381BF40048F6C5 /* ic_signal_2.png */; };
+		E4485BBF26381BF50048F6C5 /* ic_signal_4.png in Resources */ = {isa = PBXBuildFile; fileRef = E4485BB926381BF40048F6C5 /* ic_signal_4.png */; };
+		E4485BC026381BF50048F6C5 /* ic_signal_3.png in Resources */ = {isa = PBXBuildFile; fileRef = E4485BBA26381BF40048F6C5 /* ic_signal_3.png */; };
+		E4485BC126381BF50048F6C5 /* ic_signal_5.png in Resources */ = {isa = PBXBuildFile; fileRef = E4485BBB26381BF40048F6C5 /* ic_signal_5.png */; };
+		E4485BC226381BF50048F6C5 /* ic_signal_loading.png in Resources */ = {isa = PBXBuildFile; fileRef = E4485BBC26381BF50048F6C5 /* ic_signal_loading.png */; };
+		E44DEDA1264E870F001E39B3 /* YLIPCClient.h in Headers */ = {isa = PBXBuildFile; fileRef = E44DED9F264E870E001E39B3 /* YLIPCClient.h */; };
+		E44DEDA2264E870F001E39B3 /* YLIPCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E44DEDA0264E870F001E39B3 /* YLIPCClient.m */; };
+		E45C926A2669D9660081C747 /* YLIPAManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45C92692669D9660081C747 /* YLIPAManager.swift */; };
+		E45CA1D12645114C006CCED4 /* question_yellow.png in Resources */ = {isa = PBXBuildFile; fileRef = E45CA1D02645114C006CCED4 /* question_yellow.png */; };
+		E45CA1D326451210006CCED4 /* question_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = E45CA1D226451210006CCED4 /* question_gray.png */; };
+		E45CA1D52645130D006CCED4 /* Faq.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45CA1D42645130D006CCED4 /* Faq.xib */; };
+		E45CA1D7264514DA006CCED4 /* FaqDefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45CA1D6264514DA006CCED4 /* FaqDefaultCell.xib */; };
+		E45CA1D9264514E9006CCED4 /* FaqExpandsionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45CA1D8264514E9006CCED4 /* FaqExpandsionCell.xib */; };
+		E470FF982643D3C800C2121E /* YLMoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E470FF962643D3C800C2121E /* YLMoreViewController.xib */; };
+		E470FF992643D3C800C2121E /* YLMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E470FF972643D3C800C2121E /* YLMoreViewController.swift */; };
+		E470FFA22643D74D00C2121E /* ic_privacy_policy@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E470FF9C2643D74D00C2121E /* ic_privacy_policy@3x.png */; };
+		E470FFA32643D74D00C2121E /* ic_gdpr@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E470FF9D2643D74D00C2121E /* ic_gdpr@2x.png */; };
+		E470FFA42643D74D00C2121E /* ic_feedback@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E470FF9E2643D74D00C2121E /* ic_feedback@3x.png */; };
+		E470FFA52643D74D00C2121E /* ic_share@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E470FF9F2643D74D00C2121E /* ic_share@3x.png */; };
+		E470FFA62643D74D00C2121E /* ic_terms_of_service@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E470FFA02643D74D00C2121E /* ic_terms_of_service@3x.png */; };
+		E470FFA72643D74D00C2121E /* ic_faq@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E470FFA12643D74D00C2121E /* ic_faq@3x.png */; };
+		E470FFA92643D7B300C2121E /* ic_star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E470FFA82643D7B300C2121E /* ic_star@2x.png */; };
+		E470FFAB2643D9BE00C2121E /* ic_rating_star_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = E470FFAA2643D9BE00C2121E /* ic_rating_star_empty.png */; };
+		E470FFAD2643D9E100C2121E /* ic_rating_star.png in Resources */ = {isa = PBXBuildFile; fileRef = E470FFAC2643D9E100C2121E /* ic_rating_star.png */; };
+		E470FFAF2643DEA700C2121E /* cellMoreFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = E470FFAE2643DEA700C2121E /* cellMoreFooter.xib */; };
+		E4730416266DC90300E8609A /* YLVipFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4730414266DC90300E8609A /* YLVipFirstViewController.swift */; };
+		E4730417266DC90300E8609A /* YLVipFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4730415266DC90300E8609A /* YLVipFirstViewController.xib */; };
+		E4730425266DCA1F00E8609A /* ic_vip_fast_green.png in Resources */ = {isa = PBXBuildFile; fileRef = E4730419266DCA1E00E8609A /* ic_vip_fast_green.png */; };
+		E4730426266DCA1F00E8609A /* return.png in Resources */ = {isa = PBXBuildFile; fileRef = E473041A266DCA1E00E8609A /* return.png */; };
+		E4730427266DCA1F00E8609A /* ic_vip_unlimited_green.png in Resources */ = {isa = PBXBuildFile; fileRef = E473041B266DCA1E00E8609A /* ic_vip_unlimited_green.png */; };
+		E4730428266DCA1F00E8609A /* ic_vid_no_ad_greed.png in Resources */ = {isa = PBXBuildFile; fileRef = E473041C266DCA1E00E8609A /* ic_vid_no_ad_greed.png */; };
+		E4730429266DCA1F00E8609A /* ic_vip_fast.png in Resources */ = {isa = PBXBuildFile; fileRef = E473041D266DCA1E00E8609A /* ic_vip_fast.png */; };
+		E473042A266DCA1F00E8609A /* ic_vip_regions_green.png in Resources */ = {isa = PBXBuildFile; fileRef = E473041E266DCA1E00E8609A /* ic_vip_regions_green.png */; };
+		E473042B266DCA1F00E8609A /* ic_vip_regions.png in Resources */ = {isa = PBXBuildFile; fileRef = E473041F266DCA1F00E8609A /* ic_vip_regions.png */; };
+		E473042C266DCA1F00E8609A /* ic_hot.png in Resources */ = {isa = PBXBuildFile; fileRef = E4730420266DCA1F00E8609A /* ic_hot.png */; };
+		E473042D266DCA1F00E8609A /* ic_vip_card.png in Resources */ = {isa = PBXBuildFile; fileRef = E4730421266DCA1F00E8609A /* ic_vip_card.png */; };
+		E473042E266DCA1F00E8609A /* ic_vip_unlimited.png in Resources */ = {isa = PBXBuildFile; fileRef = E4730422266DCA1F00E8609A /* ic_vip_unlimited.png */; };
+		E473042F266DCA1F00E8609A /* ic_vid_no_ad.png in Resources */ = {isa = PBXBuildFile; fileRef = E4730423266DCA1F00E8609A /* ic_vid_no_ad.png */; };
+		E4730430266DCA1F00E8609A /* ic_vip_big.png in Resources */ = {isa = PBXBuildFile; fileRef = E4730424266DCA1F00E8609A /* ic_vip_big.png */; };
+		E4730434266DF57300E8609A /* ic_price.png in Resources */ = {isa = PBXBuildFile; fileRef = E4730431266DF57300E8609A /* ic_price.png */; };
+		E4730435266DF57300E8609A /* ic_discout.png in Resources */ = {isa = PBXBuildFile; fileRef = E4730432266DF57300E8609A /* ic_discout.png */; };
+		E4730436266DF57300E8609A /* ic_close_22.png in Resources */ = {isa = PBXBuildFile; fileRef = E4730433266DF57300E8609A /* ic_close_22.png */; };
+		E473043D266E190F00E8609A /* YLVipSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E473043B266E190F00E8609A /* YLVipSecondViewController.swift */; };
+		E473043E266E190F00E8609A /* YLVipSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E473043C266E190F00E8609A /* YLVipSecondViewController.xib */; };
+		E478FE74263ABD9100C77448 /* ic_close.png in Resources */ = {isa = PBXBuildFile; fileRef = E478FE73263ABD9100C77448 /* ic_close.png */; };
+		E4820513264A727300A7D47B /* ic_button_plus_2hour_long.png in Resources */ = {isa = PBXBuildFile; fileRef = E4820512264A727300A7D47B /* ic_button_plus_2hour_long.png */; };
+		E48E1E18266F0B490067164D /* ic_price_2.png in Resources */ = {isa = PBXBuildFile; fileRef = E48E1E17266F0B480067164D /* ic_price_2.png */; };
+		E490E45D264921F300CA54E5 /* YLDisconnectReportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490E45B264921F300CA54E5 /* YLDisconnectReportVC.swift */; };
+		E490E45E264921F300CA54E5 /* YLDisconnectReportVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E490E45C264921F300CA54E5 /* YLDisconnectReportVC.xib */; };
+		E490E46026492F5200CA54E5 /* ic_disconnected_dots.png in Resources */ = {isa = PBXBuildFile; fileRef = E490E45F26492F5200CA54E5 /* ic_disconnected_dots.png */; };
+		E490E4622649331700CA54E5 /* ic_button_plus_2hour_2.png in Resources */ = {isa = PBXBuildFile; fileRef = E490E4612649331700CA54E5 /* ic_button_plus_2hour_2.png */; };
+		E496A300264E7D9900988BBF /* YLIPCServer.h in Headers */ = {isa = PBXBuildFile; fileRef = E496A2FE264E7D9900988BBF /* YLIPCServer.h */; };
+		E496A301264E7D9900988BBF /* YLIPCServer.m in Sources */ = {isa = PBXBuildFile; fileRef = E496A2FF264E7D9900988BBF /* YLIPCServer.m */; };
+		E497EBAB267C33F8007D4DD8 /* melon_img_upgrate_bg2.png in Resources */ = {isa = PBXBuildFile; fileRef = E497EBA9267C33F8007D4DD8 /* melon_img_upgrate_bg2.png */; };
+		E497EBAC267C33F8007D4DD8 /* melon_img_upgrate_bg1.png in Resources */ = {isa = PBXBuildFile; fileRef = E497EBAA267C33F8007D4DD8 /* melon_img_upgrate_bg1.png */; };
+		E497EBAE267C3C95007D4DD8 /* melon_img_vip_discout.png in Resources */ = {isa = PBXBuildFile; fileRef = E497EBAD267C3C95007D4DD8 /* melon_img_vip_discout.png */; };
+		E498427F26734B08004F5372 /* img_watermelon_vip.png in Resources */ = {isa = PBXBuildFile; fileRef = E498427E26734B08004F5372 /* img_watermelon_vip.png */; };
+		E49E14CE267AF2B40006AB0A /* melon_img_popup_protect.png in Resources */ = {isa = PBXBuildFile; fileRef = E49E14CD267AF2B30006AB0A /* melon_img_popup_protect.png */; };
+		E49E14D1267B00430006AB0A /* YLVIPPaySucceedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49E14CF267B00430006AB0A /* YLVIPPaySucceedViewController.swift */; };
+		E49E14D2267B00430006AB0A /* YLVIPPaySucceedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E49E14D0267B00430006AB0A /* YLVIPPaySucceedViewController.xib */; };
+		E49E14D5267B215B0006AB0A /* melon_btn_green.png in Resources */ = {isa = PBXBuildFile; fileRef = E49E14D4267B215B0006AB0A /* melon_btn_green.png */; };
+		E49E14D8267B222F0006AB0A /* melon_success_data.json in Resources */ = {isa = PBXBuildFile; fileRef = E49E14D7267B222F0006AB0A /* melon_success_data.json */; };
+		E49E14DB267B2A3D0006AB0A /* YLVipFirstViewControllerV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49E14D9267B2A3D0006AB0A /* YLVipFirstViewControllerV2.swift */; };
+		E49E14DC267B2A3D0006AB0A /* YLVipFirstViewControllerV2.xib in Resources */ = {isa = PBXBuildFile; fileRef = E49E14DA267B2A3D0006AB0A /* YLVipFirstViewControllerV2.xib */; };
+		E49E14DF267B2A5B0006AB0A /* YLVipSecondViewControllerV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49E14DD267B2A5B0006AB0A /* YLVipSecondViewControllerV2.swift */; };
+		E49E14E0267B2A5B0006AB0A /* YLVipSecondViewControllerV2.xib in Resources */ = {isa = PBXBuildFile; fileRef = E49E14DE267B2A5B0006AB0A /* YLVipSecondViewControllerV2.xib */; };
+		E49E14E2267B2D290006AB0A /* melon_card_VIP.png in Resources */ = {isa = PBXBuildFile; fileRef = E49E14E1267B2D290006AB0A /* melon_card_VIP.png */; };
+		E49E14E4267B2E330006AB0A /* melon_card_notVIP.png in Resources */ = {isa = PBXBuildFile; fileRef = E49E14E3267B2E330006AB0A /* melon_card_notVIP.png */; };
+		E49E14E9267B356D0006AB0A /* melon_ic_popup_04regions.png in Resources */ = {isa = PBXBuildFile; fileRef = E49E14E5267B356C0006AB0A /* melon_ic_popup_04regions.png */; };
+		E49E14EA267B356D0006AB0A /* melon_ic_popup_03unlimited.png in Resources */ = {isa = PBXBuildFile; fileRef = E49E14E6267B356C0006AB0A /* melon_ic_popup_03unlimited.png */; };
+		E49E14EB267B356D0006AB0A /* melon_ic_popup_01speed.png in Resources */ = {isa = PBXBuildFile; fileRef = E49E14E7267B356C0006AB0A /* melon_ic_popup_01speed.png */; };
+		E49E14EC267B356D0006AB0A /* melon_ic_popup_02ads.png in Resources */ = {isa = PBXBuildFile; fileRef = E49E14E8267B356D0006AB0A /* melon_ic_popup_02ads.png */; };
+		E49E14EE267B390D0006AB0A /* melon_img_vip_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = E49E14ED267B390D0006AB0A /* melon_img_vip_bg.png */; };
+		E49E14F0267B408F0006AB0A /* cellCollection_sub.xib in Resources */ = {isa = PBXBuildFile; fileRef = E49E14EF267B408F0006AB0A /* cellCollection_sub.xib */; };
+		E4AECE97264BA735006CC0EF /* YLADCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = E4AECE95264BA735006CC0EF /* YLADCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4AECE9A264BA735006CC0EF /* YLADCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4AECE93264BA735006CC0EF /* YLADCommon.framework */; };
+		E4AECE9B264BA735006CC0EF /* YLADCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E4AECE93264BA735006CC0EF /* YLADCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E4AECEA0264BA7BE006CC0EF /* YLADMainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AECE9F264BA7BE006CC0EF /* YLADMainManager.swift */; };
+		E4AECEA2264BA8B3006CC0EF /* YLAdAdMob.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AECEA1264BA8B3006CC0EF /* YLAdAdMob.swift */; };
+		E4AECEA4264BA900006CC0EF /* YLADBasePlatform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AECEA3264BA900006CC0EF /* YLADBasePlatform.swift */; };
+		E4AECEA6264BAFDE006CC0EF /* YLADMainManagerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4AECEA5264BAFDE006CC0EF /* YLADMainManagerConfig.swift */; };
+		E4BDF205265788450034966D /* default_cloundad.json in Resources */ = {isa = PBXBuildFile; fileRef = E4BDF204265788450034966D /* default_cloundad.json */; };
+		E4BDF207265793F80034966D /* melon_ic_region_ban.png in Resources */ = {isa = PBXBuildFile; fileRef = E4BDF206265793F80034966D /* melon_ic_region_ban.png */; };
+		E4CED5BA2656590C00034DC6 /* default_s.json in Resources */ = {isa = PBXBuildFile; fileRef = E4CED5B92656590C00034DC6 /* default_s.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4053233263656EC001B35C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E40531ED26365525001B35C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E405322D263656EC001B35C0;
+			remoteInfo = YGCommon;
+		};
+		E405327A263657EF001B35C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E40531ED26365525001B35C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4053274263657EF001B35C0;
+			remoteInfo = YLVPNCommon;
+		};
+		E405329C263658C3001B35C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4053298263658C2001B35C0 /* ShadowPath.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B8DEFD7B1CE9C923003FC706;
+			remoteInfo = ShadowPath;
+		};
+		E40532A2263658E6001B35C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4053298263658C2001B35C0 /* ShadowPath.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B8DEFD7A1CE9C923003FC706;
+			remoteInfo = ShadowPath;
+		};
+		E40532F026365D8C001B35C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E40531ED26365525001B35C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E40532E726365D8C001B35C0;
+			remoteInfo = Tunnel;
+		};
+		E41E49B2264B7642003DEF31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E40531ED26365525001B35C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4053274263657EF001B35C0;
+			remoteInfo = YLVPNCommon;
+		};
+		E4AECE98264BA735006CC0EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E40531ED26365525001B35C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4AECE92264BA735006CC0EF;
+			remoteInfo = YLADCommon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E40532202636553B001B35C0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E40532F226365D8C001B35C0 /* Tunnel.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4053237263656EC001B35C0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E4AECE9B264BA735006CC0EF /* YLADCommon.framework in Embed Frameworks */,
+				E4053236263656EC001B35C0 /* YGCommon.framework in Embed Frameworks */,
+				E405327D263657EF001B35C0 /* YLVPNCommon.framework in Embed Frameworks */,
+				E41E49BC264B777F003DEF31 /* ShadowPath.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00BBC3FFD06A0D97A3D777EB /* Pods-YLADCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLADCommon.release.xcconfig"; path = "Target Support Files/Pods-YLADCommon/Pods-YLADCommon.release.xcconfig"; sourceTree = "<group>"; };
+		0AC0C6106CE0544D75A64FD8 /* Pods-bypass-melon-vpn-ios-YGCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bypass-melon-vpn-ios-YGCommon.release.xcconfig"; path = "Target Support Files/Pods-bypass-melon-vpn-ios-YGCommon/Pods-bypass-melon-vpn-ios-YGCommon.release.xcconfig"; sourceTree = "<group>"; };
+		0E7B56C3C307798A4CC35771 /* Pods-bypass-melon-vpn-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bypass-melon-vpn-ios.release.xcconfig"; path = "Target Support Files/Pods-bypass-melon-vpn-ios/Pods-bypass-melon-vpn-ios.release.xcconfig"; sourceTree = "<group>"; };
+		17FE6D237A0A0151E229873D /* Pods_bypass_melon_vpn_ios_YLADLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bypass_melon_vpn_ios_YLADLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28E61EA34FC33F7BE14D745A /* Pods_bypass_melon_vpn_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bypass_melon_vpn_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B27E60836559CC6207F6A1B /* Pods-bypass-melon-vpn-ios-YLADLib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bypass-melon-vpn-ios-YLADLib.debug.xcconfig"; path = "Target Support Files/Pods-bypass-melon-vpn-ios-YLADLib/Pods-bypass-melon-vpn-ios-YLADLib.debug.xcconfig"; sourceTree = "<group>"; };
+		648062A100487E2F700601D9 /* Pods-bypass-melon-vpn-ios-YLADLib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bypass-melon-vpn-ios-YLADLib.release.xcconfig"; path = "Target Support Files/Pods-bypass-melon-vpn-ios-YLADLib/Pods-bypass-melon-vpn-ios-YLADLib.release.xcconfig"; sourceTree = "<group>"; };
+		6EAB13B6071EC28C1181D2B5 /* Pods-bypass-melon-vpn-ios-YGCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bypass-melon-vpn-ios-YGCommon.debug.xcconfig"; path = "Target Support Files/Pods-bypass-melon-vpn-ios-YGCommon/Pods-bypass-melon-vpn-ios-YGCommon.debug.xcconfig"; sourceTree = "<group>"; };
+		875F84B7A6C4B3CF17C8C6CE /* Pods-YGCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YGCommon.debug.xcconfig"; path = "Target Support Files/Pods-YGCommon/Pods-YGCommon.debug.xcconfig"; sourceTree = "<group>"; };
+		8E7E22C80EB377096C08B9A3 /* Pods-bypass-melon-vpn-ios-YLADCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bypass-melon-vpn-ios-YLADCommon.release.xcconfig"; path = "Target Support Files/Pods-bypass-melon-vpn-ios-YLADCommon/Pods-bypass-melon-vpn-ios-YLADCommon.release.xcconfig"; sourceTree = "<group>"; };
+		91E62396D8492B036DC460AC /* Pods_YGCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YGCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0C8866D589B5970AE44284B /* Pods-YLADCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YLADCommon.debug.xcconfig"; path = "Target Support Files/Pods-YLADCommon/Pods-YLADCommon.debug.xcconfig"; sourceTree = "<group>"; };
+		AB49651137381BF5768EB765 /* Pods-YGCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YGCommon.release.xcconfig"; path = "Target Support Files/Pods-YGCommon/Pods-YGCommon.release.xcconfig"; sourceTree = "<group>"; };
+		BA8432817543DD47BAB10849 /* Pods-bypass-melon-vpn-ios-YLADCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bypass-melon-vpn-ios-YLADCommon.debug.xcconfig"; path = "Target Support Files/Pods-bypass-melon-vpn-ios-YLADCommon/Pods-bypass-melon-vpn-ios-YLADCommon.debug.xcconfig"; sourceTree = "<group>"; };
+		C81329E913C5CE249E51D463 /* Pods-Tunnel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tunnel.debug.xcconfig"; path = "Target Support Files/Pods-Tunnel/Pods-Tunnel.debug.xcconfig"; sourceTree = "<group>"; };
+		C9F14BC0865994C8285EE6DD /* Pods_Tunnel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tunnel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB174AFF715DF2E1677E5114 /* Pods_YLADCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YLADCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E40177F22653B8AD002CF86D /* melon_ic_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "melon_ic_close@2x.png"; sourceTree = "<group>"; };
+		E40254DF266F4264009626EE /* YLSub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLSub.swift; sourceTree = "<group>"; };
+		E40254E3266F4AE1009626EE /* cell_vip_hot.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cell_vip_hot.xib; sourceTree = "<group>"; };
+		E40254E5266F4C17009626EE /* cell_vip_normal.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cell_vip_normal.xib; sourceTree = "<group>"; };
+		E40254E7266F51E2009626EE /* cell_footer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cell_footer.xib; sourceTree = "<group>"; };
+		E40531F526365525001B35C0 /* bypass-melon-vpn-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "bypass-melon-vpn-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E40531F826365525001B35C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E40531FA26365525001B35C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E40531FC26365525001B35C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E40531FF26365525001B35C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E405320126365526001B35C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E405320426365526001B35C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E405320626365526001B35C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E40532132636553B001B35C0 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		E4053225263655FE001B35C0 /* bypass-melon-vpn-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "bypass-melon-vpn-ios.entitlements"; sourceTree = "<group>"; };
+		E405322E263656EC001B35C0 /* YGCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YGCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4053231263656EC001B35C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E405323D2636574A001B35C0 /* YgCommonDefaultKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YgCommonDefaultKey.swift; sourceTree = "<group>"; };
+		E405323E2636574A001B35C0 /* SocksSecurityUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocksSecurityUtil.swift; sourceTree = "<group>"; };
+		E405323F2636574A001B35C0 /* YGCommonInit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YGCommonInit.swift; sourceTree = "<group>"; };
+		E40532402636574A001B35C0 /* SwiftyUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyUserDefaults.swift; sourceTree = "<group>"; };
+		E40532412636574A001B35C0 /* CryptoUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoUtils.swift; sourceTree = "<group>"; };
+		E40532422636574A001B35C0 /* ic_x0302.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_x0302.png; sourceTree = "<group>"; };
+		E40532432636574A001B35C0 /* YGCommonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YGCommonHelper.swift; sourceTree = "<group>"; };
+		E40532442636574A001B35C0 /* SecretKeyGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretKeyGenerator.swift; sourceTree = "<group>"; };
+		E40532452636574A001B35C0 /* YGCommon-Bridge-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YGCommon-Bridge-Header.h"; sourceTree = "<group>"; };
+		E40532462636574A001B35C0 /* YGLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YGLogger.swift; sourceTree = "<group>"; };
+		E4053261263657AC001B35C0 /* YLServerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLServerManager.swift; sourceTree = "<group>"; };
+		E4053262263657AC001B35C0 /* YLUnity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLUnity.swift; sourceTree = "<group>"; };
+		E4053263263657AC001B35C0 /* YLServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLServer.swift; sourceTree = "<group>"; };
+		E405326A263657CC001B35C0 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		E405326B263657CC001B35C0 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		E4053275263657EF001B35C0 /* YLVPNCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YLVPNCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4053277263657EF001B35C0 /* YLVPNCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLVPNCommon.h; sourceTree = "<group>"; };
+		E4053278263657EF001B35C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E405328426365808001B35C0 /* Pollution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pollution.swift; sourceTree = "<group>"; };
+		E405328526365808001B35C0 /* YLVPNConfigManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLVPNConfigManager.swift; sourceTree = "<group>"; };
+		E405328626365808001B35C0 /* YLVPNConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLVPNConfig.swift; sourceTree = "<group>"; };
+		E4053298263658C2001B35C0 /* ShadowPath.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ShadowPath.xcodeproj; path = Libs/ShadowPath/ShadowPath.xcodeproj; sourceTree = "<group>"; };
+		E40532C626365A5E001B35C0 /* YGCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGCommon.h; sourceTree = "<group>"; };
+		E40532CA26365AAE001B35C0 /* YGCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = YGCommon.h; path = YGCommon/YGCommon.h; sourceTree = "<group>"; };
+		E40532CB26365AC6001B35C0 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		E40532E826365D8C001B35C0 /* Tunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Tunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E40532EB26365D8C001B35C0 /* PacketTunnelProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PacketTunnelProvider.h; sourceTree = "<group>"; };
+		E40532EC26365D8C001B35C0 /* PacketTunnelProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PacketTunnelProvider.m; sourceTree = "<group>"; };
+		E40532EE26365D8C001B35C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E40532EF26365D8C001B35C0 /* Tunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tunnel.entitlements; sourceTree = "<group>"; };
+		E40532FA26365E3B001B35C0 /* dns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dns.h; sourceTree = "<group>"; };
+		E40532FB26365E3B001B35C0 /* dns.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = dns.m; sourceTree = "<group>"; };
+		E405330A26368F4B001B35C0 /* YLServerConfigure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLServerConfigure.swift; sourceTree = "<group>"; };
+		E405330C26368F66001B35C0 /* YLServerArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLServerArea.swift; sourceTree = "<group>"; };
+		E405330E26369EFE001B35C0 /* YLHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLHomeViewController.swift; sourceTree = "<group>"; };
+		E405330F26369EFE001B35C0 /* YLHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLHomeViewController.xib; sourceTree = "<group>"; };
+		E405331426369FF9001B35C0 /* ic_guide_time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_guide_time.png; sourceTree = "<group>"; };
+		E405331626369FF9001B35C0 /* ic_upload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_upload.png; sourceTree = "<group>"; };
+		E405331826369FF9001B35C0 /* ic_test_network.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_test_network.png; sourceTree = "<group>"; };
+		E405331926369FF9001B35C0 /* ic_guide_hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_guide_hand.png; sourceTree = "<group>"; };
+		E405331A26369FF9001B35C0 /* ic_vip_home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_vip_home.png; sourceTree = "<group>"; };
+		E405331B26369FF9001B35C0 /* ic_viptime_video备份.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_viptime_video备份.png"; sourceTree = "<group>"; };
+		E405331D26369FF9001B35C0 /* ic_home_ad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_home_ad.png; sourceTree = "<group>"; };
+		E405331E26369FF9001B35C0 /* ic_download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_download.png; sourceTree = "<group>"; };
+		E405331F26369FF9001B35C0 /* ic_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_back.png; sourceTree = "<group>"; };
+		E405332026369FF9001B35C0 /* ic_fix_network.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_fix_network.png; sourceTree = "<group>"; };
+		E405332126369FF9001B35C0 /* ic_home_time.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_home_time.png; sourceTree = "<group>"; };
+		E405332226369FF9001B35C0 /* ic_viptime_video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_viptime_video.png; sourceTree = "<group>"; };
+		E405332526369FF9001B35C0 /* ic_guide_vip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_guide_vip.png; sourceTree = "<group>"; };
+		E405333C2636A2B2001B35C0 /* YLColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLColor.swift; sourceTree = "<group>"; };
+		E405333E2636A7D6001B35C0 /* img_watermelon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img_watermelon@2x.png"; sourceTree = "<group>"; };
+		E40533402636A902001B35C0 /* ic_info@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_info@2x.png"; sourceTree = "<group>"; };
+		E40533492636ADE6001B35C0 /* YLLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLLabel.swift; sourceTree = "<group>"; };
+		E405334B2636AE80001B35C0 /* Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
+		E405334F2636B081001B35C0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Countries.strings; sourceTree = "<group>"; };
+		E40533512636B081001B35C0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E40533522636B081001B35C0 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E40533532636B081001B35C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Countries.strings; sourceTree = "<group>"; };
+		E40533542636B081001B35C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E40533552636B081001B35C0 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E40533562636B081001B35C0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E40533572636B081001B35C0 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E40533582636B081001B35C0 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E40533592636B081001B35C0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Countries.strings; sourceTree = "<group>"; };
+		E405335A2636B081001B35C0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E405335B2636B081001B35C0 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E405335C2636B081001B35C0 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E405335F2636B87D001B35C0 /* ic_little_melon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_little_melon.png; sourceTree = "<group>"; };
+		E40C94F9265F7F2000D44B24 /* YLEventHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLEventHelper.swift; sourceTree = "<group>"; };
+		E40C94FB265F7FFE00D44B24 /* YLADUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLADUnit.swift; sourceTree = "<group>"; };
+		E40C9502265F907600D44B24 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E4131428264E0E2E00CE17D1 /* YLThreeSDKConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLThreeSDKConfig.swift; sourceTree = "<group>"; };
+		E413142A264E0F7000CE17D1 /* Adjust.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Adjust.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E413934C267C434A00067738 /* melon_img_vip_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = melon_img_vip_02.png; sourceTree = "<group>"; };
+		E413934D267C434A00067738 /* melon_img_vip_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = melon_img_vip_01.png; sourceTree = "<group>"; };
+		E4139350267C509B00067738 /* melon_ic_vip_get.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = melon_ic_vip_get.png; sourceTree = "<group>"; };
+		E4139356267C737300067738 /* YLVIPThreeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLVIPThreeView.xib; sourceTree = "<group>"; };
+		E4139358267C742800067738 /* melon_img_popup_vip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = melon_img_popup_vip.png; sourceTree = "<group>"; };
+		E413935A267C80BB00067738 /* melon_img_popup_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = melon_img_popup_bg.png; sourceTree = "<group>"; };
+		E41407E1264CCE1500024D32 /* NativeAppInstallAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NativeAppInstallAdView.xib; sourceTree = "<group>"; };
+		E41407E3264CEB7000024D32 /* LiveLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveLabel.swift; sourceTree = "<group>"; };
+		E41407E5264CED8E00024D32 /* YoConfigKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoConfigKeys.swift; sourceTree = "<group>"; };
+		E415CA1C267C9A9400B780BD /* melon_crown_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = melon_crown_data.json; sourceTree = "<group>"; };
+		E419B563263909C500220F1B /* ic_smart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_smart.png; sourceTree = "<group>"; };
+		E419B57026390FB300220F1B /* bypass-melon-vpn-ios-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "bypass-melon-vpn-ios-Bridging-Header.h"; sourceTree = "<group>"; };
+		E419B57126390FB300220F1B /* YLNetHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLNetHelper.h; sourceTree = "<group>"; };
+		E419B57226390FB300220F1B /* YLNetHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLNetHelper.m; sourceTree = "<group>"; };
+		E41E49A4264B7583003DEF31 /* openssl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = openssl.framework; path = Libs/openssl.framework; sourceTree = "<group>"; };
+		E41E53312653621000329E67 /* YLLoading.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLLoading.xib; sourceTree = "<group>"; };
+		E41E53342653690A00329E67 /* loading@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loading@2x.png"; sourceTree = "<group>"; };
+		E41E533626536A0400329E67 /* YLLoading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLLoading.swift; sourceTree = "<group>"; };
+		E4240E5B264A19E0003CBD9C /* UIFullScreeAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFullScreeAlert.swift; sourceTree = "<group>"; };
+		E4240E5D264A19EF003CBD9C /* UIFullScreeAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIFullScreeAlert.xib; sourceTree = "<group>"; };
+		E4240E61264A1BBA003CBD9C /* ic_popup_watch_whole_video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_popup_watch_whole_video.png; sourceTree = "<group>"; };
+		E4240E62264A1BBA003CBD9C /* ic_viptime_video_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_viptime_video_1.png; sourceTree = "<group>"; };
+		E4240E63264A1BBA003CBD9C /* ic_popup_connect_2h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_popup_connect_2h.png; sourceTree = "<group>"; };
+		E4240E67264A1BBA003CBD9C /* ic_popup_ad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_popup_ad.png; sourceTree = "<group>"; };
+		E4240E68264A1BBA003CBD9C /* ic_guide_word.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_guide_word.png; sourceTree = "<group>"; };
+		E4240E69264A1BBA003CBD9C /* ic_vip_arrows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_vip_arrows.png; sourceTree = "<group>"; };
+		E4240E6A264A1BBA003CBD9C /* ic_popup_4h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_popup_4h.png; sourceTree = "<group>"; };
+		E4240E76264A2924003CBD9C /* viewAlertShowVideo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = viewAlertShowVideo.xib; sourceTree = "<group>"; };
+		E42E75B126720DEA008ABED9 /* ic_retry_purchase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_retry_purchase.png; sourceTree = "<group>"; };
+		E43456242643C38200520426 /* WebViewVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WebViewVC.storyboard; sourceTree = "<group>"; };
+		E43456252643C38200520426 /* WebViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewVC.swift; sourceTree = "<group>"; };
+		E43456292643C3AC00520426 /* FaqExpandsionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaqExpandsionCell.swift; sourceTree = "<group>"; };
+		E434562A2643C3AC00520426 /* FaqDO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaqDO.swift; sourceTree = "<group>"; };
+		E434562B2643C3AC00520426 /* FaqVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaqVC.swift; sourceTree = "<group>"; };
+		E434562D2643C3AC00520426 /* FaqDefaultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaqDefaultCell.swift; sourceTree = "<group>"; };
+		E43456342643C3E000520426 /* GADConsentHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GADConsentHelper.swift; sourceTree = "<group>"; };
+		E43456352643C3E000520426 /* ConsentCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentCard.swift; sourceTree = "<group>"; };
+		E43456362643C3E000520426 /* ConsentCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConsentCard.xib; sourceTree = "<group>"; };
+		E43456372643C3E000520426 /* ConsentAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentAlert.swift; sourceTree = "<group>"; };
+		E434563D2643C4E700520426 /* ServerConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConstants.swift; sourceTree = "<group>"; };
+		E434563E2643C4E700520426 /* YogaConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YogaConstants.swift; sourceTree = "<group>"; };
+		E43456422643C52800520426 /* MailHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailHelper.swift; sourceTree = "<group>"; };
+		E43456442643C52800520426 /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
+		E43456452643C52800520426 /* ColorUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
+		E43456462643C52800520426 /* AppUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
+		E434564B2643C52800520426 /* InviteFriendsUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteFriendsUtil.swift; sourceTree = "<group>"; };
+		E434564C2643C52800520426 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		E434564D2643C52800520426 /* JumpAppHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JumpAppHelper.swift; sourceTree = "<group>"; };
+		E43456592643C5C700520426 /* MKCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKCollectionViewCell.swift; sourceTree = "<group>"; };
+		E434565A2643C5C700520426 /* MKTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKTableViewCell.swift; sourceTree = "<group>"; };
+		E434565B2643C5C700520426 /* MKButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKButton.swift; sourceTree = "<group>"; };
+		E434565C2643C5C700520426 /* MKLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKLayer.swift; sourceTree = "<group>"; };
+		E43456622643C8CB00520426 /* RatingStarAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingStarAlert.swift; sourceTree = "<group>"; };
+		E43456632643C8CB00520426 /* RatingStarCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingStarCard.swift; sourceTree = "<group>"; };
+		E43456642643C8CB00520426 /* RatingStarCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RatingStarCard.xib; sourceTree = "<group>"; };
+		E43456692643CB1B00520426 /* ToastWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastWindow.swift; sourceTree = "<group>"; };
+		E434566A2643CB1B00520426 /* ToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		E434566B2643CB1B00520426 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		E434566C2643CB1B00520426 /* ToastCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastCenter.swift; sourceTree = "<group>"; };
+		E43456712643CC1200520426 /* cellMore.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cellMore.xib; sourceTree = "<group>"; };
+		E4485B7D2637BAE40048F6C5 /* YLVPNManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLVPNManager.swift; sourceTree = "<group>"; };
+		E4485B7F2637E3D40048F6C5 /* ic_button_plus_30mins.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_button_plus_30mins.png; sourceTree = "<group>"; };
+		E4485B802637E3D40048F6C5 /* ic_button_plus_2hour.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_button_plus_2hour.png; sourceTree = "<group>"; };
+		E4485B832637E3ED0048F6C5 /* ic_home_regions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_home_regions.png; sourceTree = "<group>"; };
+		E4485B842637E3ED0048F6C5 /* ic_home_setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_home_setting.png; sourceTree = "<group>"; };
+		E4485B872637E4AC0048F6C5 /* YLUserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLUserManager.swift; sourceTree = "<group>"; };
+		E4485B892637F8010048F6C5 /* YLServerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLServerListViewController.swift; sourceTree = "<group>"; };
+		E4485B8A2637F8010048F6C5 /* YLServerListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLServerListViewController.xib; sourceTree = "<group>"; };
+		E4485B8D2637FA410048F6C5 /* cellServerList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cellServerList.xib; sourceTree = "<group>"; };
+		E4485BA32637FB840048F6C5 /* ic_server_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_server_select.png; sourceTree = "<group>"; };
+		E4485BA42637FB840048F6C5 /* ic_servers_video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_servers_video.png; sourceTree = "<group>"; };
+		E4485BA52637FB840048F6C5 /* ic_servers_ad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_servers_ad.png; sourceTree = "<group>"; };
+		E4485BA62637FB840048F6C5 /* ic_refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_refresh.png; sourceTree = "<group>"; };
+		E4485BA72637FB840048F6C5 /* ic_fold.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_fold.png; sourceTree = "<group>"; };
+		E4485BA82637FB840048F6C5 /* ic_server_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_server_normal.png; sourceTree = "<group>"; };
+		E4485BA92637FB840048F6C5 /* ic_vip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_vip.png; sourceTree = "<group>"; };
+		E4485BB52637FF350048F6C5 /* cellServerListHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cellServerListHeader.xib; sourceTree = "<group>"; };
+		E4485BB726381BF40048F6C5 /* ic_signal_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_signal_1.png; sourceTree = "<group>"; };
+		E4485BB826381BF40048F6C5 /* ic_signal_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_signal_2.png; sourceTree = "<group>"; };
+		E4485BB926381BF40048F6C5 /* ic_signal_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_signal_4.png; sourceTree = "<group>"; };
+		E4485BBA26381BF40048F6C5 /* ic_signal_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_signal_3.png; sourceTree = "<group>"; };
+		E4485BBB26381BF40048F6C5 /* ic_signal_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_signal_5.png; sourceTree = "<group>"; };
+		E4485BBC26381BF50048F6C5 /* ic_signal_loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_signal_loading.png; sourceTree = "<group>"; };
+		E44DED9F264E870E001E39B3 /* YLIPCClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLIPCClient.h; sourceTree = "<group>"; };
+		E44DEDA0264E870F001E39B3 /* YLIPCClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLIPCClient.m; sourceTree = "<group>"; };
+		E45C92692669D9660081C747 /* YLIPAManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLIPAManager.swift; sourceTree = "<group>"; };
+		E45CA1D02645114C006CCED4 /* question_yellow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = question_yellow.png; sourceTree = "<group>"; };
+		E45CA1D226451210006CCED4 /* question_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = question_gray.png; sourceTree = "<group>"; };
+		E45CA1D42645130D006CCED4 /* Faq.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Faq.xib; sourceTree = "<group>"; };
+		E45CA1D6264514DA006CCED4 /* FaqDefaultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FaqDefaultCell.xib; sourceTree = "<group>"; };
+		E45CA1D8264514E9006CCED4 /* FaqExpandsionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FaqExpandsionCell.xib; sourceTree = "<group>"; };
+		E470FF962643D3C800C2121E /* YLMoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YLMoreViewController.xib; sourceTree = "<group>"; };
+		E470FF972643D3C800C2121E /* YLMoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YLMoreViewController.swift; sourceTree = "<group>"; };
+		E470FF9C2643D74D00C2121E /* ic_privacy_policy@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_privacy_policy@3x.png"; sourceTree = "<group>"; };
+		E470FF9D2643D74D00C2121E /* ic_gdpr@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_gdpr@2x.png"; sourceTree = "<group>"; };
+		E470FF9E2643D74D00C2121E /* ic_feedback@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_feedback@3x.png"; sourceTree = "<group>"; };
+		E470FF9F2643D74D00C2121E /* ic_share@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_share@3x.png"; sourceTree = "<group>"; };
+		E470FFA02643D74D00C2121E /* ic_terms_of_service@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_terms_of_service@3x.png"; sourceTree = "<group>"; };
+		E470FFA12643D74D00C2121E /* ic_faq@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_faq@3x.png"; sourceTree = "<group>"; };
+		E470FFA82643D7B300C2121E /* ic_star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ic_star@2x.png"; sourceTree = "<group>"; };
+		E470FFAA2643D9BE00C2121E /* ic_rating_star_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_rating_star_empty.png; sourceTree = "<group>"; };
+		E470FFAC2643D9E100C2121E /* ic_rating_star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_rating_star.png; sourceTree = "<group>"; };
+		E470FFAE2643DEA700C2121E /* cellMoreFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cellMoreFooter.xib; sourceTree = "<group>"; };
+		E4730414266DC90300E8609A /* YLVipFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLVipFirstViewController.swift; sourceTree = "<group>"; };
+		E4730415266DC90300E8609A /* YLVipFirstViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLVipFirstViewController.xib; sourceTree = "<group>"; };
+		E4730419266DCA1E00E8609A /* ic_vip_fast_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_vip_fast_green.png; sourceTree = "<group>"; };
+		E473041A266DCA1E00E8609A /* return.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = return.png; sourceTree = "<group>"; };
+		E473041B266DCA1E00E8609A /* ic_vip_unlimited_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_vip_unlimited_green.png; sourceTree = "<group>"; };
+		E473041C266DCA1E00E8609A /* ic_vid_no_ad_greed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_vid_no_ad_greed.png; sourceTree = "<group>"; };
+		E473041D266DCA1E00E8609A /* ic_vip_fast.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_vip_fast.png; sourceTree = "<group>"; };
+		E473041E266DCA1E00E8609A /* ic_vip_regions_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_vip_regions_green.png; sourceTree = "<group>"; };
+		E473041F266DCA1F00E8609A /* ic_vip_regions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_vip_regions.png; sourceTree = "<group>"; };
+		E4730420266DCA1F00E8609A /* ic_hot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_hot.png; sourceTree = "<group>"; };
+		E4730421266DCA1F00E8609A /* ic_vip_card.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_vip_card.png; sourceTree = "<group>"; };
+		E4730422266DCA1F00E8609A /* ic_vip_unlimited.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_vip_unlimited.png; sourceTree = "<group>"; };
+		E4730423266DCA1F00E8609A /* ic_vid_no_ad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_vid_no_ad.png; sourceTree = "<group>"; };
+		E4730424266DCA1F00E8609A /* ic_vip_big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_vip_big.png; sourceTree = "<group>"; };
+		E4730431266DF57300E8609A /* ic_price.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_price.png; sourceTree = "<group>"; };
+		E4730432266DF57300E8609A /* ic_discout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_discout.png; sourceTree = "<group>"; };
+		E4730433266DF57300E8609A /* ic_close_22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_close_22.png; sourceTree = "<group>"; };
+		E473043B266E190F00E8609A /* YLVipSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLVipSecondViewController.swift; sourceTree = "<group>"; };
+		E473043C266E190F00E8609A /* YLVipSecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLVipSecondViewController.xib; sourceTree = "<group>"; };
+		E478FE73263ABD9100C77448 /* ic_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_close.png; sourceTree = "<group>"; };
+		E47AF131263A8624009E6E4E /* MoPubSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MoPubSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4820512264A727300A7D47B /* ic_button_plus_2hour_long.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_button_plus_2hour_long.png; sourceTree = "<group>"; };
+		E48E1E17266F0B480067164D /* ic_price_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_price_2.png; sourceTree = "<group>"; };
+		E490E45B264921F300CA54E5 /* YLDisconnectReportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLDisconnectReportVC.swift; sourceTree = "<group>"; };
+		E490E45C264921F300CA54E5 /* YLDisconnectReportVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLDisconnectReportVC.xib; sourceTree = "<group>"; };
+		E490E45F26492F5200CA54E5 /* ic_disconnected_dots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_disconnected_dots.png; sourceTree = "<group>"; };
+		E490E4612649331700CA54E5 /* ic_button_plus_2hour_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_button_plus_2hour_2.png; sourceTree = "<group>"; };
+		E496A2FE264E7D9900988BBF /* YLIPCServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLIPCServer.h; sourceTree = "<group>"; };
+		E496A2FF264E7D9900988BBF /* YLIPCServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLIPCServer.m; sourceTree = "<group>"; };
+		E497EBA9267C33F8007D4DD8 /* melon_img_upgrate_bg2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = melon_img_upgrate_bg2.png; sourceTree = "<group>"; };
+		E497EBAA267C33F8007D4DD8 /* melon_img_upgrate_bg1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = melon_img_upgrate_bg1.png; sourceTree = "<group>"; };
+		E497EBAD267C3C95007D4DD8 /* melon_img_vip_discout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = melon_img_vip_discout.png; sourceTree = "<group>"; };
+		E498427E26734B08004F5372 /* img_watermelon_vip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img_watermelon_vip.png; sourceTree = "<group>"; };
+		E49E14CD267AF2B30006AB0A /* melon_img_popup_protect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = melon_img_popup_protect.png; sourceTree = "<group>"; };
+		E49E14CF267B00430006AB0A /* YLVIPPaySucceedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLVIPPaySucceedViewController.swift; sourceTree = "<group>"; };
+		E49E14D0267B00430006AB0A /* YLVIPPaySucceedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLVIPPaySucceedViewController.xib; sourceTree = "<group>"; };
+		E49E14D4267B215B0006AB0A /* melon_btn_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = melon_btn_green.png; sourceTree = "<group>"; };
+		E49E14D7267B222F0006AB0A /* melon_success_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = melon_success_data.json; sourceTree = "<group>"; };
+		E49E14D9267B2A3D0006AB0A /* YLVipFirstViewControllerV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLVipFirstViewControllerV2.swift; sourceTree = "<group>"; };
+		E49E14DA267B2A3D0006AB0A /* YLVipFirstViewControllerV2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLVipFirstViewControllerV2.xib; sourceTree = "<group>"; };
+		E49E14DD267B2A5B0006AB0A /* YLVipSecondViewControllerV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLVipSecondViewControllerV2.swift; sourceTree = "<group>"; };
+		E49E14DE267B2A5B0006AB0A /* YLVipSecondViewControllerV2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YLVipSecondViewControllerV2.xib; sourceTree = "<group>"; };
+		E49E14E1267B2D290006AB0A /* melon_card_VIP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = melon_card_VIP.png; sourceTree = "<group>"; };
+		E49E14E3267B2E330006AB0A /* melon_card_notVIP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = melon_card_notVIP.png; sourceTree = "<group>"; };
+		E49E14E5267B356C0006AB0A /* melon_ic_popup_04regions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = melon_ic_popup_04regions.png; sourceTree = "<group>"; };
+		E49E14E6267B356C0006AB0A /* melon_ic_popup_03unlimited.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = melon_ic_popup_03unlimited.png; sourceTree = "<group>"; };
+		E49E14E7267B356C0006AB0A /* melon_ic_popup_01speed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = melon_ic_popup_01speed.png; sourceTree = "<group>"; };
+		E49E14E8267B356D0006AB0A /* melon_ic_popup_02ads.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = melon_ic_popup_02ads.png; sourceTree = "<group>"; };
+		E49E14ED267B390D0006AB0A /* melon_img_vip_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = melon_img_vip_bg.png; sourceTree = "<group>"; };
+		E49E14EF267B408F0006AB0A /* cellCollection_sub.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cellCollection_sub.xib; sourceTree = "<group>"; };
+		E4AECE93264BA735006CC0EF /* YLADCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YLADCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4AECE95264BA735006CC0EF /* YLADCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLADCommon.h; sourceTree = "<group>"; };
+		E4AECE96264BA735006CC0EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4AECE9F264BA7BE006CC0EF /* YLADMainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLADMainManager.swift; sourceTree = "<group>"; };
+		E4AECEA1264BA8B3006CC0EF /* YLAdAdMob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLAdAdMob.swift; sourceTree = "<group>"; };
+		E4AECEA3264BA900006CC0EF /* YLADBasePlatform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLADBasePlatform.swift; sourceTree = "<group>"; };
+		E4AECEA5264BAFDE006CC0EF /* YLADMainManagerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YLADMainManagerConfig.swift; sourceTree = "<group>"; };
+		E4BDF204265788450034966D /* default_cloundad.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = default_cloundad.json; sourceTree = "<group>"; };
+		E4BDF206265793F80034966D /* melon_ic_region_ban.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = melon_ic_region_ban.png; sourceTree = "<group>"; };
+		E4CED5B92656590C00034DC6 /* default_s.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = default_s.json; sourceTree = "<group>"; };
+		EE37040232CCD21BEDEE24DC /* Pods-bypass-melon-vpn-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bypass-melon-vpn-ios.debug.xcconfig"; path = "Target Support Files/Pods-bypass-melon-vpn-ios/Pods-bypass-melon-vpn-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		FE61C8E6F5B463FF679477DE /* Pods-Tunnel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tunnel.release.xcconfig"; path = "Target Support Files/Pods-Tunnel/Pods-Tunnel.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E40531F226365525001B35C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4053226263655FE001B35C0 /* NetworkExtension.framework in Frameworks */,
+				E4053235263656EC001B35C0 /* YGCommon.framework in Frameworks */,
+				E4AECE9A264BA735006CC0EF /* YLADCommon.framework in Frameworks */,
+				E41E49BB264B777F003DEF31 /* ShadowPath.framework in Frameworks */,
+				7BDB16D528FD2234E0F8D79E /* Pods_bypass_melon_vpn_ios.framework in Frameworks */,
+				E405327C263657EF001B35C0 /* YLVPNCommon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E405322B263656EC001B35C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59DF45BBF5FD2600C55A98FE /* Pods_YGCommon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4053272263657EF001B35C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41E49B7264B76F0003DEF31 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E40532E526365D8C001B35C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E40532FF26365EA4001B35C0 /* YGCommon.framework in Frameworks */,
+				E41E49B0264B7642003DEF31 /* YLVPNCommon.framework in Frameworks */,
+				E40532FD26365E56001B35C0 /* libresolv.tbd in Frameworks */,
+				E40532E926365D8C001B35C0 /* NetworkExtension.framework in Frameworks */,
+				150932C7E41B392288043163 /* Pods_Tunnel.framework in Frameworks */,
+				E41E49B8264B7758003DEF31 /* ShadowPath.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4AECE90264BA735006CC0EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				331CDD0E57FC9C08EE13A66F /* Pods_YLADCommon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1BCCC70060B7917ED938E72 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C81329E913C5CE249E51D463 /* Pods-Tunnel.debug.xcconfig */,
+				FE61C8E6F5B463FF679477DE /* Pods-Tunnel.release.xcconfig */,
+				EE37040232CCD21BEDEE24DC /* Pods-bypass-melon-vpn-ios.debug.xcconfig */,
+				0E7B56C3C307798A4CC35771 /* Pods-bypass-melon-vpn-ios.release.xcconfig */,
+				6EAB13B6071EC28C1181D2B5 /* Pods-bypass-melon-vpn-ios-YGCommon.debug.xcconfig */,
+				0AC0C6106CE0544D75A64FD8 /* Pods-bypass-melon-vpn-ios-YGCommon.release.xcconfig */,
+				4B27E60836559CC6207F6A1B /* Pods-bypass-melon-vpn-ios-YLADLib.debug.xcconfig */,
+				648062A100487E2F700601D9 /* Pods-bypass-melon-vpn-ios-YLADLib.release.xcconfig */,
+				BA8432817543DD47BAB10849 /* Pods-bypass-melon-vpn-ios-YLADCommon.debug.xcconfig */,
+				8E7E22C80EB377096C08B9A3 /* Pods-bypass-melon-vpn-ios-YLADCommon.release.xcconfig */,
+				875F84B7A6C4B3CF17C8C6CE /* Pods-YGCommon.debug.xcconfig */,
+				AB49651137381BF5768EB765 /* Pods-YGCommon.release.xcconfig */,
+				A0C8866D589B5970AE44284B /* Pods-YLADCommon.debug.xcconfig */,
+				00BBC3FFD06A0D97A3D777EB /* Pods-YLADCommon.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E40531EC26365525001B35C0 = {
+			isa = PBXGroup;
+			children = (
+				E40532CA26365AAE001B35C0 /* YGCommon.h */,
+				E4053298263658C2001B35C0 /* ShadowPath.xcodeproj */,
+				E40531F726365525001B35C0 /* bypass-melon-vpn-ios */,
+				E405322F263656EC001B35C0 /* YGCommon */,
+				E4053276263657EF001B35C0 /* YLVPNCommon */,
+				E40532EA26365D8C001B35C0 /* Tunnel */,
+				E4AECE94264BA735006CC0EF /* YLADCommon */,
+				E40532122636553B001B35C0 /* Frameworks */,
+				E40531F626365525001B35C0 /* Products */,
+				B1BCCC70060B7917ED938E72 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		E40531F626365525001B35C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E40531F526365525001B35C0 /* bypass-melon-vpn-ios.app */,
+				E405322E263656EC001B35C0 /* YGCommon.framework */,
+				E4053275263657EF001B35C0 /* YLVPNCommon.framework */,
+				E40532E826365D8C001B35C0 /* Tunnel.appex */,
+				E4AECE93264BA735006CC0EF /* YLADCommon.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E40531F726365525001B35C0 /* bypass-melon-vpn-ios */ = {
+			isa = PBXGroup;
+			children = (
+				E45C92682669D9460081C747 /* YLIPAManager */,
+				E40C9502265F907600D44B24 /* GoogleService-Info.plist */,
+				E4CED5B8265658EF00034DC6 /* Resource */,
+				E4131427264E0DF600CE17D1 /* YLThreeSDK */,
+				E405334D2636B081001B35C0 /* Localizable */,
+				E405331226369FF9001B35C0 /* Images */,
+				E4053269263657CC001B35C0 /* UI */,
+				E4053260263657AC001B35C0 /* YLServer */,
+				E4053225263655FE001B35C0 /* bypass-melon-vpn-ios.entitlements */,
+				E40531F826365525001B35C0 /* AppDelegate.swift */,
+				E40531FA26365525001B35C0 /* SceneDelegate.swift */,
+				E40531FC26365525001B35C0 /* ViewController.swift */,
+				E40531FE26365525001B35C0 /* Main.storyboard */,
+				E405320126365526001B35C0 /* Assets.xcassets */,
+				E405320326365526001B35C0 /* LaunchScreen.storyboard */,
+				E405320626365526001B35C0 /* Info.plist */,
+				E470FFAE2643DEA700C2121E /* cellMoreFooter.xib */,
+			);
+			path = "bypass-melon-vpn-ios";
+			sourceTree = "<group>";
+		};
+		E40532122636553B001B35C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E413142A264E0F7000CE17D1 /* Adjust.framework */,
+				E41E49A4264B7583003DEF31 /* openssl.framework */,
+				E47AF131263A8624009E6E4E /* MoPubSDK.framework */,
+				E40532CB26365AC6001B35C0 /* libresolv.tbd */,
+				E40532132636553B001B35C0 /* NetworkExtension.framework */,
+				C9F14BC0865994C8285EE6DD /* Pods_Tunnel.framework */,
+				28E61EA34FC33F7BE14D745A /* Pods_bypass_melon_vpn_ios.framework */,
+				17FE6D237A0A0151E229873D /* Pods_bypass_melon_vpn_ios_YLADLib.framework */,
+				91E62396D8492B036DC460AC /* Pods_YGCommon.framework */,
+				DB174AFF715DF2E1677E5114 /* Pods_YLADCommon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E405322F263656EC001B35C0 /* YGCommon */ = {
+			isa = PBXGroup;
+			children = (
+				E40532C626365A5E001B35C0 /* YGCommon.h */,
+				E40532412636574A001B35C0 /* CryptoUtils.swift */,
+				E40532422636574A001B35C0 /* ic_x0302.png */,
+				E40532442636574A001B35C0 /* SecretKeyGenerator.swift */,
+				E405323E2636574A001B35C0 /* SocksSecurityUtil.swift */,
+				E40532402636574A001B35C0 /* SwiftyUserDefaults.swift */,
+				E40532452636574A001B35C0 /* YGCommon-Bridge-Header.h */,
+				E405323D2636574A001B35C0 /* YgCommonDefaultKey.swift */,
+				E40532432636574A001B35C0 /* YGCommonHelper.swift */,
+				E405323F2636574A001B35C0 /* YGCommonInit.swift */,
+				E40532462636574A001B35C0 /* YGLogger.swift */,
+				E4053231263656EC001B35C0 /* Info.plist */,
+			);
+			path = YGCommon;
+			sourceTree = "<group>";
+		};
+		E4053260263657AC001B35C0 /* YLServer */ = {
+			isa = PBXGroup;
+			children = (
+				E4053261263657AC001B35C0 /* YLServerManager.swift */,
+				E4053262263657AC001B35C0 /* YLUnity.swift */,
+				E4053263263657AC001B35C0 /* YLServer.swift */,
+				E405330A26368F4B001B35C0 /* YLServerConfigure.swift */,
+				E405330C26368F66001B35C0 /* YLServerArea.swift */,
+				E4485B872637E4AC0048F6C5 /* YLUserManager.swift */,
+				E419B57126390FB300220F1B /* YLNetHelper.h */,
+				E419B57226390FB300220F1B /* YLNetHelper.m */,
+				E419B57026390FB300220F1B /* bypass-melon-vpn-ios-Bridging-Header.h */,
+			);
+			path = YLServer;
+			sourceTree = "<group>";
+		};
+		E4053269263657CC001B35C0 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E4730413266DC8D800E8609A /* VIP */,
+				E470FF972643D3C800C2121E /* YLMoreViewController.swift */,
+				E470FF962643D3C800C2121E /* YLMoreViewController.xib */,
+				E43456682643CB1B00520426 /* Toast */,
+				E43456612643C8CB00520426 /* RatingStar */,
+				E43456582643C5C700520426 /* MaterialKit */,
+				E43456412643C52800520426 /* Utils */,
+				E434563C2643C4E700520426 /* Constant */,
+				E43456332643C3E000520426 /* GADConsent */,
+				E43456282643C3AC00520426 /* faq */,
+				E43456242643C38200520426 /* WebViewVC.storyboard */,
+				E43456252643C38200520426 /* WebViewVC.swift */,
+				E405334B2636AE80001B35C0 /* Localized.swift */,
+				E40533422636A9F6001B35C0 /* CustomUI */,
+				E405326A263657CC001B35C0 /* RootViewController.swift */,
+				E405326B263657CC001B35C0 /* RootViewController.xib */,
+				E405330E26369EFE001B35C0 /* YLHomeViewController.swift */,
+				E405330F26369EFE001B35C0 /* YLHomeViewController.xib */,
+				E4485B892637F8010048F6C5 /* YLServerListViewController.swift */,
+				E4485B8A2637F8010048F6C5 /* YLServerListViewController.xib */,
+				E4485B8D2637FA410048F6C5 /* cellServerList.xib */,
+				E4485BB52637FF350048F6C5 /* cellServerListHeader.xib */,
+				E43456712643CC1200520426 /* cellMore.xib */,
+				E490E45B264921F300CA54E5 /* YLDisconnectReportVC.swift */,
+				E490E45C264921F300CA54E5 /* YLDisconnectReportVC.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E4053276263657EF001B35C0 /* YLVPNCommon */ = {
+			isa = PBXGroup;
+			children = (
+				E4053277263657EF001B35C0 /* YLVPNCommon.h */,
+				E405328426365808001B35C0 /* Pollution.swift */,
+				E405328626365808001B35C0 /* YLVPNConfig.swift */,
+				E405328526365808001B35C0 /* YLVPNConfigManager.swift */,
+				E4053278263657EF001B35C0 /* Info.plist */,
+				E4485B7D2637BAE40048F6C5 /* YLVPNManager.swift */,
+				E496A2FE264E7D9900988BBF /* YLIPCServer.h */,
+				E496A2FF264E7D9900988BBF /* YLIPCServer.m */,
+				E44DED9F264E870E001E39B3 /* YLIPCClient.h */,
+				E44DEDA0264E870F001E39B3 /* YLIPCClient.m */,
+			);
+			path = YLVPNCommon;
+			sourceTree = "<group>";
+		};
+		E4053299263658C2001B35C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E405329D263658C3001B35C0 /* ShadowPath.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E40532EA26365D8C001B35C0 /* Tunnel */ = {
+			isa = PBXGroup;
+			children = (
+				E40532FA26365E3B001B35C0 /* dns.h */,
+				E40532FB26365E3B001B35C0 /* dns.m */,
+				E40532EB26365D8C001B35C0 /* PacketTunnelProvider.h */,
+				E40532EC26365D8C001B35C0 /* PacketTunnelProvider.m */,
+				E40532EE26365D8C001B35C0 /* Info.plist */,
+				E40532EF26365D8C001B35C0 /* Tunnel.entitlements */,
+			);
+			path = Tunnel;
+			sourceTree = "<group>";
+		};
+		E405331226369FF9001B35C0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E49E14D6267B222F0006AB0A /* animations */,
+				E4730418266DCA0C00E8609A /* vip */,
+				E41E53332653690A00329E67 /* other */,
+				E4240E5F264A1BBA003CBD9C /* alert */,
+				E470FF9B2643D70400C2121E /* setting */,
+				E4485BA22637FB840048F6C5 /* list */,
+				E405331326369FF9001B35C0 /* home */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		E405331326369FF9001B35C0 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				E49E14CD267AF2B30006AB0A /* melon_img_popup_protect.png */,
+				E498427E26734B08004F5372 /* img_watermelon_vip.png */,
+				E490E4612649331700CA54E5 /* ic_button_plus_2hour_2.png */,
+				E490E45F26492F5200CA54E5 /* ic_disconnected_dots.png */,
+				E478FE73263ABD9100C77448 /* ic_close.png */,
+				E4485B832637E3ED0048F6C5 /* ic_home_regions.png */,
+				E4485B842637E3ED0048F6C5 /* ic_home_setting.png */,
+				E4485B802637E3D40048F6C5 /* ic_button_plus_2hour.png */,
+				E4485B7F2637E3D40048F6C5 /* ic_button_plus_30mins.png */,
+				E405335F2636B87D001B35C0 /* ic_little_melon.png */,
+				E40533402636A902001B35C0 /* ic_info@2x.png */,
+				E405333E2636A7D6001B35C0 /* img_watermelon@2x.png */,
+				E405331426369FF9001B35C0 /* ic_guide_time.png */,
+				E405331626369FF9001B35C0 /* ic_upload.png */,
+				E405331826369FF9001B35C0 /* ic_test_network.png */,
+				E405331926369FF9001B35C0 /* ic_guide_hand.png */,
+				E405331A26369FF9001B35C0 /* ic_vip_home.png */,
+				E405331B26369FF9001B35C0 /* ic_viptime_video备份.png */,
+				E405331D26369FF9001B35C0 /* ic_home_ad.png */,
+				E405331E26369FF9001B35C0 /* ic_download.png */,
+				E405331F26369FF9001B35C0 /* ic_back.png */,
+				E405332026369FF9001B35C0 /* ic_fix_network.png */,
+				E405332126369FF9001B35C0 /* ic_home_time.png */,
+				E405332226369FF9001B35C0 /* ic_viptime_video.png */,
+				E405332526369FF9001B35C0 /* ic_guide_vip.png */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		E40533422636A9F6001B35C0 /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				E41407E3264CEB7000024D32 /* LiveLabel.swift */,
+				E40533492636ADE6001B35C0 /* YLLabel.swift */,
+				E4240E5B264A19E0003CBD9C /* UIFullScreeAlert.swift */,
+				E4240E5D264A19EF003CBD9C /* UIFullScreeAlert.xib */,
+				E4240E76264A2924003CBD9C /* viewAlertShowVideo.xib */,
+				E41E53312653621000329E67 /* YLLoading.xib */,
+				E41E533626536A0400329E67 /* YLLoading.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		E405334D2636B081001B35C0 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				E405334E2636B081001B35C0 /* Countries.strings */,
+				E40533502636B081001B35C0 /* Localizable.strings */,
+			);
+			name = Localizable;
+			path = UI/Localizable;
+			sourceTree = "<group>";
+		};
+		E4131427264E0DF600CE17D1 /* YLThreeSDK */ = {
+			isa = PBXGroup;
+			children = (
+				E4131428264E0E2E00CE17D1 /* YLThreeSDKConfig.swift */,
+				E40C94F9265F7F2000D44B24 /* YLEventHelper.swift */,
+			);
+			path = YLThreeSDK;
+			sourceTree = "<group>";
+		};
+		E41E53332653690A00329E67 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				E4BDF206265793F80034966D /* melon_ic_region_ban.png */,
+				E41E53342653690A00329E67 /* loading@2x.png */,
+			);
+			path = other;
+			sourceTree = "<group>";
+		};
+		E4240E5F264A1BBA003CBD9C /* alert */ = {
+			isa = PBXGroup;
+			children = (
+				E40177F22653B8AD002CF86D /* melon_ic_close@2x.png */,
+				E4820512264A727300A7D47B /* ic_button_plus_2hour_long.png */,
+				E4240E61264A1BBA003CBD9C /* ic_popup_watch_whole_video.png */,
+				E4240E62264A1BBA003CBD9C /* ic_viptime_video_1.png */,
+				E4240E63264A1BBA003CBD9C /* ic_popup_connect_2h.png */,
+				E4240E67264A1BBA003CBD9C /* ic_popup_ad.png */,
+				E4240E68264A1BBA003CBD9C /* ic_guide_word.png */,
+				E4240E69264A1BBA003CBD9C /* ic_vip_arrows.png */,
+				E4240E6A264A1BBA003CBD9C /* ic_popup_4h.png */,
+			);
+			path = alert;
+			sourceTree = "<group>";
+		};
+		E43456282643C3AC00520426 /* faq */ = {
+			isa = PBXGroup;
+			children = (
+				E43456292643C3AC00520426 /* FaqExpandsionCell.swift */,
+				E434562A2643C3AC00520426 /* FaqDO.swift */,
+				E434562B2643C3AC00520426 /* FaqVC.swift */,
+				E434562D2643C3AC00520426 /* FaqDefaultCell.swift */,
+				E45CA1D42645130D006CCED4 /* Faq.xib */,
+				E45CA1D6264514DA006CCED4 /* FaqDefaultCell.xib */,
+				E45CA1D8264514E9006CCED4 /* FaqExpandsionCell.xib */,
+			);
+			path = faq;
+			sourceTree = "<group>";
+		};
+		E43456332643C3E000520426 /* GADConsent */ = {
+			isa = PBXGroup;
+			children = (
+				E43456342643C3E000520426 /* GADConsentHelper.swift */,
+				E43456352643C3E000520426 /* ConsentCard.swift */,
+				E43456362643C3E000520426 /* ConsentCard.xib */,
+				E43456372643C3E000520426 /* ConsentAlert.swift */,
+			);
+			path = GADConsent;
+			sourceTree = "<group>";
+		};
+		E434563C2643C4E700520426 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				E41407E5264CED8E00024D32 /* YoConfigKeys.swift */,
+				E434563D2643C4E700520426 /* ServerConstants.swift */,
+				E434563E2643C4E700520426 /* YogaConstants.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		E43456412643C52800520426 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E405333C2636A2B2001B35C0 /* YLColor.swift */,
+				E43456422643C52800520426 /* MailHelper.swift */,
+				E43456442643C52800520426 /* ViewUtils.swift */,
+				E43456452643C52800520426 /* ColorUtils.swift */,
+				E43456462643C52800520426 /* AppUtils.swift */,
+				E434564B2643C52800520426 /* InviteFriendsUtil.swift */,
+				E434564C2643C52800520426 /* LocationManager.swift */,
+				E434564D2643C52800520426 /* JumpAppHelper.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E43456582643C5C700520426 /* MaterialKit */ = {
+			isa = PBXGroup;
+			children = (
+				E43456592643C5C700520426 /* MKCollectionViewCell.swift */,
+				E434565A2643C5C700520426 /* MKTableViewCell.swift */,
+				E434565B2643C5C700520426 /* MKButton.swift */,
+				E434565C2643C5C700520426 /* MKLayer.swift */,
+			);
+			path = MaterialKit;
+			sourceTree = "<group>";
+		};
+		E43456612643C8CB00520426 /* RatingStar */ = {
+			isa = PBXGroup;
+			children = (
+				E43456622643C8CB00520426 /* RatingStarAlert.swift */,
+				E43456632643C8CB00520426 /* RatingStarCard.swift */,
+				E43456642643C8CB00520426 /* RatingStarCard.xib */,
+			);
+			path = RatingStar;
+			sourceTree = "<group>";
+		};
+		E43456682643CB1B00520426 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				E43456692643CB1B00520426 /* ToastWindow.swift */,
+				E434566A2643CB1B00520426 /* ToastView.swift */,
+				E434566B2643CB1B00520426 /* Toast.swift */,
+				E434566C2643CB1B00520426 /* ToastCenter.swift */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		E4485BA22637FB840048F6C5 /* list */ = {
+			isa = PBXGroup;
+			children = (
+				E419B563263909C500220F1B /* ic_smart.png */,
+				E4485BB726381BF40048F6C5 /* ic_signal_1.png */,
+				E4485BB826381BF40048F6C5 /* ic_signal_2.png */,
+				E4485BBA26381BF40048F6C5 /* ic_signal_3.png */,
+				E4485BB926381BF40048F6C5 /* ic_signal_4.png */,
+				E4485BBB26381BF40048F6C5 /* ic_signal_5.png */,
+				E4485BBC26381BF50048F6C5 /* ic_signal_loading.png */,
+				E4485BA32637FB840048F6C5 /* ic_server_select.png */,
+				E4485BA42637FB840048F6C5 /* ic_servers_video.png */,
+				E4485BA52637FB840048F6C5 /* ic_servers_ad.png */,
+				E4485BA62637FB840048F6C5 /* ic_refresh.png */,
+				E4485BA72637FB840048F6C5 /* ic_fold.png */,
+				E4485BA82637FB840048F6C5 /* ic_server_normal.png */,
+				E4485BA92637FB840048F6C5 /* ic_vip.png */,
+			);
+			path = list;
+			sourceTree = "<group>";
+		};
+		E45C92682669D9460081C747 /* YLIPAManager */ = {
+			isa = PBXGroup;
+			children = (
+				E45C92692669D9660081C747 /* YLIPAManager.swift */,
+				E40254DF266F4264009626EE /* YLSub.swift */,
+			);
+			path = YLIPAManager;
+			sourceTree = "<group>";
+		};
+		E470FF9B2643D70400C2121E /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				E42E75B126720DEA008ABED9 /* ic_retry_purchase.png */,
+				E45CA1D226451210006CCED4 /* question_gray.png */,
+				E45CA1D02645114C006CCED4 /* question_yellow.png */,
+				E470FFAC2643D9E100C2121E /* ic_rating_star.png */,
+				E470FFAA2643D9BE00C2121E /* ic_rating_star_empty.png */,
+				E470FFA82643D7B300C2121E /* ic_star@2x.png */,
+				E470FFA12643D74D00C2121E /* ic_faq@3x.png */,
+				E470FF9E2643D74D00C2121E /* ic_feedback@3x.png */,
+				E470FF9D2643D74D00C2121E /* ic_gdpr@2x.png */,
+				E470FF9C2643D74D00C2121E /* ic_privacy_policy@3x.png */,
+				E470FF9F2643D74D00C2121E /* ic_share@3x.png */,
+				E470FFA02643D74D00C2121E /* ic_terms_of_service@3x.png */,
+			);
+			path = setting;
+			sourceTree = "<group>";
+		};
+		E4730413266DC8D800E8609A /* VIP */ = {
+			isa = PBXGroup;
+			children = (
+				E4730414266DC90300E8609A /* YLVipFirstViewController.swift */,
+				E4730415266DC90300E8609A /* YLVipFirstViewController.xib */,
+				E473043B266E190F00E8609A /* YLVipSecondViewController.swift */,
+				E473043C266E190F00E8609A /* YLVipSecondViewController.xib */,
+				E40254E3266F4AE1009626EE /* cell_vip_hot.xib */,
+				E40254E5266F4C17009626EE /* cell_vip_normal.xib */,
+				E40254E7266F51E2009626EE /* cell_footer.xib */,
+				E49E14CF267B00430006AB0A /* YLVIPPaySucceedViewController.swift */,
+				E49E14D0267B00430006AB0A /* YLVIPPaySucceedViewController.xib */,
+				E49E14D9267B2A3D0006AB0A /* YLVipFirstViewControllerV2.swift */,
+				E49E14DA267B2A3D0006AB0A /* YLVipFirstViewControllerV2.xib */,
+				E49E14DD267B2A5B0006AB0A /* YLVipSecondViewControllerV2.swift */,
+				E49E14DE267B2A5B0006AB0A /* YLVipSecondViewControllerV2.xib */,
+				E49E14EF267B408F0006AB0A /* cellCollection_sub.xib */,
+				E4139356267C737300067738 /* YLVIPThreeView.xib */,
+			);
+			path = VIP;
+			sourceTree = "<group>";
+		};
+		E4730418266DCA0C00E8609A /* vip */ = {
+			isa = PBXGroup;
+			children = (
+				E413935A267C80BB00067738 /* melon_img_popup_bg.png */,
+				E4139358267C742800067738 /* melon_img_popup_vip.png */,
+				E4139350267C509B00067738 /* melon_ic_vip_get.png */,
+				E413934D267C434A00067738 /* melon_img_vip_01.png */,
+				E413934C267C434A00067738 /* melon_img_vip_02.png */,
+				E497EBAD267C3C95007D4DD8 /* melon_img_vip_discout.png */,
+				E497EBAA267C33F8007D4DD8 /* melon_img_upgrate_bg1.png */,
+				E497EBA9267C33F8007D4DD8 /* melon_img_upgrate_bg2.png */,
+				E49E14ED267B390D0006AB0A /* melon_img_vip_bg.png */,
+				E49E14E7267B356C0006AB0A /* melon_ic_popup_01speed.png */,
+				E49E14E8267B356D0006AB0A /* melon_ic_popup_02ads.png */,
+				E49E14E6267B356C0006AB0A /* melon_ic_popup_03unlimited.png */,
+				E49E14E5267B356C0006AB0A /* melon_ic_popup_04regions.png */,
+				E49E14E3267B2E330006AB0A /* melon_card_notVIP.png */,
+				E49E14E1267B2D290006AB0A /* melon_card_VIP.png */,
+				E49E14D4267B215B0006AB0A /* melon_btn_green.png */,
+				E48E1E17266F0B480067164D /* ic_price_2.png */,
+				E4730433266DF57300E8609A /* ic_close_22.png */,
+				E4730432266DF57300E8609A /* ic_discout.png */,
+				E4730431266DF57300E8609A /* ic_price.png */,
+				E4730420266DCA1F00E8609A /* ic_hot.png */,
+				E473041C266DCA1E00E8609A /* ic_vid_no_ad_greed.png */,
+				E4730423266DCA1F00E8609A /* ic_vid_no_ad.png */,
+				E4730421266DCA1F00E8609A /* ic_vip_card.png */,
+				E4730419266DCA1E00E8609A /* ic_vip_fast_green.png */,
+				E473041D266DCA1E00E8609A /* ic_vip_fast.png */,
+				E473041E266DCA1E00E8609A /* ic_vip_regions_green.png */,
+				E473041F266DCA1F00E8609A /* ic_vip_regions.png */,
+				E473041B266DCA1E00E8609A /* ic_vip_unlimited_green.png */,
+				E4730422266DCA1F00E8609A /* ic_vip_unlimited.png */,
+				E4730424266DCA1F00E8609A /* ic_vip_big.png */,
+				E473041A266DCA1E00E8609A /* return.png */,
+			);
+			path = vip;
+			sourceTree = "<group>";
+		};
+		E49E14D6267B222F0006AB0A /* animations */ = {
+			isa = PBXGroup;
+			children = (
+				E415CA1C267C9A9400B780BD /* melon_crown_data.json */,
+				E49E14D7267B222F0006AB0A /* melon_success_data.json */,
+			);
+			path = animations;
+			sourceTree = "<group>";
+		};
+		E4AECE94264BA735006CC0EF /* YLADCommon */ = {
+			isa = PBXGroup;
+			children = (
+				E41407E1264CCE1500024D32 /* NativeAppInstallAdView.xib */,
+				E4AECE95264BA735006CC0EF /* YLADCommon.h */,
+				E4AECE96264BA735006CC0EF /* Info.plist */,
+				E4AECE9F264BA7BE006CC0EF /* YLADMainManager.swift */,
+				E4AECEA1264BA8B3006CC0EF /* YLAdAdMob.swift */,
+				E4AECEA3264BA900006CC0EF /* YLADBasePlatform.swift */,
+				E4AECEA5264BAFDE006CC0EF /* YLADMainManagerConfig.swift */,
+				E40C94FB265F7FFE00D44B24 /* YLADUnit.swift */,
+			);
+			path = YLADCommon;
+			sourceTree = "<group>";
+		};
+		E4CED5B8265658EF00034DC6 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E4CED5B92656590C00034DC6 /* default_s.json */,
+				E4BDF204265788450034966D /* default_cloundad.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E4053229263656EC001B35C0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E40532C826365A7F001B35C0 /* YGCommon.h in Headers */,
+				E40532C926365A7F001B35C0 /* YGCommon-Bridge-Header.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4053270263657EF001B35C0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4053279263657EF001B35C0 /* YLVPNCommon.h in Headers */,
+				E44DEDA1264E870F001E39B3 /* YLIPCClient.h in Headers */,
+				E496A300264E7D9900988BBF /* YLIPCServer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4AECE8E264BA735006CC0EF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4AECE97264BA735006CC0EF /* YLADCommon.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E40531F426365525001B35C0 /* bypass-melon-vpn-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E405320926365526001B35C0 /* Build configuration list for PBXNativeTarget "bypass-melon-vpn-ios" */;
+			buildPhases = (
+				352366252CC99AA97EFE9E19 /* [CP] Check Pods Manifest.lock */,
+				E40531F126365525001B35C0 /* Sources */,
+				E40531F226365525001B35C0 /* Frameworks */,
+				E40531F326365525001B35C0 /* Resources */,
+				E40532202636553B001B35C0 /* Embed App Extensions */,
+				E4053237263656EC001B35C0 /* Embed Frameworks */,
+				10E3D4A6FEDBBE27C517FC4D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E40532A3263658E6001B35C0 /* PBXTargetDependency */,
+				E4053234263656EC001B35C0 /* PBXTargetDependency */,
+				E405327B263657EF001B35C0 /* PBXTargetDependency */,
+				E40532F126365D8C001B35C0 /* PBXTargetDependency */,
+				E4AECE99264BA735006CC0EF /* PBXTargetDependency */,
+			);
+			name = "bypass-melon-vpn-ios";
+			productName = "bypass-melon-vpn-ios";
+			productReference = E40531F526365525001B35C0 /* bypass-melon-vpn-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E405322D263656EC001B35C0 /* YGCommon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E405323A263656EC001B35C0 /* Build configuration list for PBXNativeTarget "YGCommon" */;
+			buildPhases = (
+				09D5B2E389C1E9E28AE360EC /* [CP] Check Pods Manifest.lock */,
+				E4053229263656EC001B35C0 /* Headers */,
+				E405322A263656EC001B35C0 /* Sources */,
+				E405322B263656EC001B35C0 /* Frameworks */,
+				E405322C263656EC001B35C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YGCommon;
+			productName = YGCommon;
+			productReference = E405322E263656EC001B35C0 /* YGCommon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E4053274263657EF001B35C0 /* YLVPNCommon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E405327E263657EF001B35C0 /* Build configuration list for PBXNativeTarget "YLVPNCommon" */;
+			buildPhases = (
+				E4053270263657EF001B35C0 /* Headers */,
+				E4053271263657EF001B35C0 /* Sources */,
+				E4053272263657EF001B35C0 /* Frameworks */,
+				E4053273263657EF001B35C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YLVPNCommon;
+			productName = YLVPNCommon;
+			productReference = E4053275263657EF001B35C0 /* YLVPNCommon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E40532E726365D8C001B35C0 /* Tunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E40532F526365D8C001B35C0 /* Build configuration list for PBXNativeTarget "Tunnel" */;
+			buildPhases = (
+				BC1C7534F306343E307522AD /* [CP] Check Pods Manifest.lock */,
+				E40532E426365D8C001B35C0 /* Sources */,
+				E40532E526365D8C001B35C0 /* Frameworks */,
+				E40532E626365D8C001B35C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E41E49B3264B7642003DEF31 /* PBXTargetDependency */,
+			);
+			name = Tunnel;
+			productName = Tunnel;
+			productReference = E40532E826365D8C001B35C0 /* Tunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E4AECE92264BA735006CC0EF /* YLADCommon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4AECE9E264BA735006CC0EF /* Build configuration list for PBXNativeTarget "YLADCommon" */;
+			buildPhases = (
+				6F7084A2753B882166F7D12E /* [CP] Check Pods Manifest.lock */,
+				E4AECE8E264BA735006CC0EF /* Headers */,
+				E4AECE8F264BA735006CC0EF /* Sources */,
+				E4AECE90264BA735006CC0EF /* Frameworks */,
+				E4AECE91264BA735006CC0EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YLADCommon;
+			productName = YLADCommon;
+			productReference = E4AECE93264BA735006CC0EF /* YLADCommon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E40531ED26365525001B35C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				DefaultBuildSystemTypeForWorkspace = Original;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					E40531F426365525001B35C0 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					E405322D263656EC001B35C0 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					E4053274263657EF001B35C0 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					E40532E726365D8C001B35C0 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					E4AECE92264BA735006CC0EF = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+				};
+			};
+			buildConfigurationList = E40531F026365525001B35C0 /* Build configuration list for PBXProject "bypass-melon-vpn-ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+				ar,
+				uk,
+				es,
+				it,
+				ru,
+				fr,
+				id,
+				th,
+			);
+			mainGroup = E40531EC26365525001B35C0;
+			productRefGroup = E40531F626365525001B35C0 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E4053299263658C2001B35C0 /* Products */;
+					ProjectRef = E4053298263658C2001B35C0 /* ShadowPath.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E40531F426365525001B35C0 /* bypass-melon-vpn-ios */,
+				E405322D263656EC001B35C0 /* YGCommon */,
+				E4053274263657EF001B35C0 /* YLVPNCommon */,
+				E40532E726365D8C001B35C0 /* Tunnel */,
+				E4AECE92264BA735006CC0EF /* YLADCommon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E405329D263658C3001B35C0 /* ShadowPath.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ShadowPath.framework;
+			remoteRef = E405329C263658C3001B35C0 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E40531F326365525001B35C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E470FFA42643D74D00C2121E /* ic_feedback@3x.png in Resources */,
+				E490E45E264921F300CA54E5 /* YLDisconnectReportVC.xib in Resources */,
+				E490E46026492F5200CA54E5 /* ic_disconnected_dots.png in Resources */,
+				E42E75B226720DEA008ABED9 /* ic_retry_purchase.png in Resources */,
+				E49E14D5267B215B0006AB0A /* melon_btn_green.png in Resources */,
+				E49E14EC267B356D0006AB0A /* melon_ic_popup_02ads.png in Resources */,
+				E49E14F0267B408F0006AB0A /* cellCollection_sub.xib in Resources */,
+				E4485BAC2637FB840048F6C5 /* ic_server_select.png in Resources */,
+				E43456722643CC1200520426 /* cellMore.xib in Resources */,
+				E4BDF207265793F80034966D /* melon_ic_region_ban.png in Resources */,
+				E49E14DC267B2A3D0006AB0A /* YLVipFirstViewControllerV2.xib in Resources */,
+				E45CA1D7264514DA006CCED4 /* FaqDefaultCell.xib in Resources */,
+				E405332A26369FF9001B35C0 /* ic_upload.png in Resources */,
+				E49E14E2267B2D290006AB0A /* melon_card_VIP.png in Resources */,
+				E497EBAE267C3C95007D4DD8 /* melon_img_vip_discout.png in Resources */,
+				E41E53352653690A00329E67 /* loading@2x.png in Resources */,
+				E405332D26369FF9001B35C0 /* ic_guide_hand.png in Resources */,
+				E4485BBF26381BF50048F6C5 /* ic_signal_4.png in Resources */,
+				E4240E6C264A1BBA003CBD9C /* ic_popup_watch_whole_video.png in Resources */,
+				E470FFAB2643D9BE00C2121E /* ic_rating_star_empty.png in Resources */,
+				E4485B812637E3D50048F6C5 /* ic_button_plus_30mins.png in Resources */,
+				E4485B822637E3D50048F6C5 /* ic_button_plus_2hour.png in Resources */,
+				E4485BB02637FB840048F6C5 /* ic_fold.png in Resources */,
+				E497EBAB267C33F8007D4DD8 /* melon_img_upgrate_bg2.png in Resources */,
+				E43456672643C8CB00520426 /* RatingStarCard.xib in Resources */,
+				E4485BB62637FF350048F6C5 /* cellServerListHeader.xib in Resources */,
+				E4139351267C509B00067738 /* melon_ic_vip_get.png in Resources */,
+				E473042A266DCA1F00E8609A /* ic_vip_regions_green.png in Resources */,
+				E4240E74264A1BBA003CBD9C /* ic_vip_arrows.png in Resources */,
+				E43456262643C38200520426 /* WebViewVC.storyboard in Resources */,
+				E4730434266DF57300E8609A /* ic_price.png in Resources */,
+				E434563A2643C3E000520426 /* ConsentCard.xib in Resources */,
+				E4730417266DC90300E8609A /* YLVipFirstViewController.xib in Resources */,
+				E40177F32653B8AD002CF86D /* melon_ic_close@2x.png in Resources */,
+				E4240E77264A2924003CBD9C /* viewAlertShowVideo.xib in Resources */,
+				E45CA1D12645114C006CCED4 /* question_yellow.png in Resources */,
+				E470FFA22643D74D00C2121E /* ic_privacy_policy@3x.png in Resources */,
+				E405332E26369FF9001B35C0 /* ic_vip_home.png in Resources */,
+				E4730436266DF57300E8609A /* ic_close_22.png in Resources */,
+				E498427F26734B08004F5372 /* img_watermelon_vip.png in Resources */,
+				E405333F2636A7D6001B35C0 /* img_watermelon@2x.png in Resources */,
+				E470FFAF2643DEA700C2121E /* cellMoreFooter.xib in Resources */,
+				E405333926369FF9001B35C0 /* ic_guide_vip.png in Resources */,
+				E4485BC026381BF50048F6C5 /* ic_signal_3.png in Resources */,
+				E405320526365526001B35C0 /* LaunchScreen.storyboard in Resources */,
+				E4485BAD2637FB840048F6C5 /* ic_servers_video.png in Resources */,
+				E405335D2636B081001B35C0 /* Countries.strings in Resources */,
+				E405333226369FF9001B35C0 /* ic_download.png in Resources */,
+				E405333626369FF9001B35C0 /* ic_viptime_video.png in Resources */,
+				E40254E6266F4C17009626EE /* cell_vip_normal.xib in Resources */,
+				E405333526369FF9001B35C0 /* ic_home_time.png in Resources */,
+				E470FFA52643D74D00C2121E /* ic_share@3x.png in Resources */,
+				E4139359267C742800067738 /* melon_img_popup_vip.png in Resources */,
+				E4485B8C2637F8010048F6C5 /* YLServerListViewController.xib in Resources */,
+				E405320226365526001B35C0 /* Assets.xcassets in Resources */,
+				E4730427266DCA1F00E8609A /* ic_vip_unlimited_green.png in Resources */,
+				E473042B266DCA1F00E8609A /* ic_vip_regions.png in Resources */,
+				E49E14EB267B356D0006AB0A /* melon_ic_popup_01speed.png in Resources */,
+				E49E14CE267AF2B40006AB0A /* melon_img_popup_protect.png in Resources */,
+				E405326D263657CC001B35C0 /* RootViewController.xib in Resources */,
+				E470FF982643D3C800C2121E /* YLMoreViewController.xib in Resources */,
+				E405333126369FF9001B35C0 /* ic_home_ad.png in Resources */,
+				E470FFA72643D74D00C2121E /* ic_faq@3x.png in Resources */,
+				E470FFA92643D7B300C2121E /* ic_star@2x.png in Resources */,
+				E470FFA32643D74D00C2121E /* ic_gdpr@2x.png in Resources */,
+				E4730428266DCA1F00E8609A /* ic_vid_no_ad_greed.png in Resources */,
+				E497EBAC267C33F8007D4DD8 /* melon_img_upgrate_bg1.png in Resources */,
+				E4240E6E264A1BBA003CBD9C /* ic_popup_connect_2h.png in Resources */,
+				E4240E5E264A19EF003CBD9C /* UIFullScreeAlert.xib in Resources */,
+				E473042D266DCA1F00E8609A /* ic_vip_card.png in Resources */,
+				E4240E73264A1BBA003CBD9C /* ic_guide_word.png in Resources */,
+				E419B564263909C500220F1B /* ic_smart.png in Resources */,
+				E45CA1D9264514E9006CCED4 /* FaqExpandsionCell.xib in Resources */,
+				E405331126369EFE001B35C0 /* YLHomeViewController.xib in Resources */,
+				E470FFA62643D74D00C2121E /* ic_terms_of_service@3x.png in Resources */,
+				E40C9503265F907600D44B24 /* GoogleService-Info.plist in Resources */,
+				E4730426266DCA1F00E8609A /* return.png in Resources */,
+				E413935B267C80BB00067738 /* melon_img_popup_bg.png in Resources */,
+				E490E4622649331700CA54E5 /* ic_button_plus_2hour_2.png in Resources */,
+				E40533412636A902001B35C0 /* ic_info@2x.png in Resources */,
+				E4485BBD26381BF50048F6C5 /* ic_signal_1.png in Resources */,
+				E405320026365525001B35C0 /* Main.storyboard in Resources */,
+				E49E14EA267B356D0006AB0A /* melon_ic_popup_03unlimited.png in Resources */,
+				E40533602636B87E001B35C0 /* ic_little_melon.png in Resources */,
+				E4485BB22637FB840048F6C5 /* ic_vip.png in Resources */,
+				E41E53322653621000329E67 /* YLLoading.xib in Resources */,
+				E4485BAF2637FB840048F6C5 /* ic_refresh.png in Resources */,
+				E4730425266DCA1F00E8609A /* ic_vip_fast_green.png in Resources */,
+				E4240E75264A1BBA003CBD9C /* ic_popup_4h.png in Resources */,
+				E473042C266DCA1F00E8609A /* ic_hot.png in Resources */,
+				E405335E2636B081001B35C0 /* Localizable.strings in Resources */,
+				E45CA1D326451210006CCED4 /* question_gray.png in Resources */,
+				E473042E266DCA1F00E8609A /* ic_vip_unlimited.png in Resources */,
+				E405333326369FF9001B35C0 /* ic_back.png in Resources */,
+				E473043E266E190F00E8609A /* YLVipSecondViewController.xib in Resources */,
+				E40254E4266F4AE1009626EE /* cell_vip_hot.xib in Resources */,
+				E4485BC126381BF50048F6C5 /* ic_signal_5.png in Resources */,
+				E413934F267C434A00067738 /* melon_img_vip_01.png in Resources */,
+				E405332C26369FF9001B35C0 /* ic_test_network.png in Resources */,
+				E4730429266DCA1F00E8609A /* ic_vip_fast.png in Resources */,
+				E4139357267C737300067738 /* YLVIPThreeView.xib in Resources */,
+				E49E14EE267B390D0006AB0A /* melon_img_vip_bg.png in Resources */,
+				E4485B862637E3ED0048F6C5 /* ic_home_setting.png in Resources */,
+				E49E14E0267B2A5B0006AB0A /* YLVipSecondViewControllerV2.xib in Resources */,
+				E4485BC226381BF50048F6C5 /* ic_signal_loading.png in Resources */,
+				E478FE74263ABD9100C77448 /* ic_close.png in Resources */,
+				E405332826369FF9001B35C0 /* ic_guide_time.png in Resources */,
+				E4240E72264A1BBA003CBD9C /* ic_popup_ad.png in Resources */,
+				E49E14E4267B2E330006AB0A /* melon_card_notVIP.png in Resources */,
+				E4485B852637E3ED0048F6C5 /* ic_home_regions.png in Resources */,
+				E470FFAD2643D9E100C2121E /* ic_rating_star.png in Resources */,
+				E45CA1D52645130D006CCED4 /* Faq.xib in Resources */,
+				E4820513264A727300A7D47B /* ic_button_plus_2hour_long.png in Resources */,
+				E415CA1D267C9A9400B780BD /* melon_crown_data.json in Resources */,
+				E4485BB12637FB840048F6C5 /* ic_server_normal.png in Resources */,
+				E4730435266DF57300E8609A /* ic_discout.png in Resources */,
+				E473042F266DCA1F00E8609A /* ic_vid_no_ad.png in Resources */,
+				E413934E267C434A00067738 /* melon_img_vip_02.png in Resources */,
+				E4730430266DCA1F00E8609A /* ic_vip_big.png in Resources */,
+				E405333426369FF9001B35C0 /* ic_fix_network.png in Resources */,
+				E48E1E18266F0B490067164D /* ic_price_2.png in Resources */,
+				E49E14D2267B00430006AB0A /* YLVIPPaySucceedViewController.xib in Resources */,
+				E4485BBE26381BF50048F6C5 /* ic_signal_2.png in Resources */,
+				E40254E8266F51E2009626EE /* cell_footer.xib in Resources */,
+				E4485BAE2637FB840048F6C5 /* ic_servers_ad.png in Resources */,
+				E49E14E9267B356D0006AB0A /* melon_ic_popup_04regions.png in Resources */,
+				E4485B8E2637FA410048F6C5 /* cellServerList.xib in Resources */,
+				E49E14D8267B222F0006AB0A /* melon_success_data.json in Resources */,
+				E4CED5BA2656590C00034DC6 /* default_s.json in Resources */,
+				E4240E6D264A1BBA003CBD9C /* ic_viptime_video_1.png in Resources */,
+				E4BDF205265788450034966D /* default_cloundad.json in Resources */,
+				E405332F26369FF9001B35C0 /* ic_viptime_video备份.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E405322C263656EC001B35C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E405324D2636574A001B35C0 /* ic_x0302.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4053273263657EF001B35C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E40532E626365D8C001B35C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4AECE91264BA735006CC0EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41407E2264CCE1500024D32 /* NativeAppInstallAdView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09D5B2E389C1E9E28AE360EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YGCommon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		10E3D4A6FEDBBE27C517FC4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bypass-melon-vpn-ios/Pods-bypass-melon-vpn-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bypass-melon-vpn-ios/Pods-bypass-melon-vpn-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bypass-melon-vpn-ios/Pods-bypass-melon-vpn-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		352366252CC99AA97EFE9E19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bypass-melon-vpn-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F7084A2753B882166F7D12E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YLADCommon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC1C7534F306343E307522AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tunnel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E40531F126365525001B35C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E405330B26368F4B001B35C0 /* YLServerConfigure.swift in Sources */,
+				E43456512643C52800520426 /* ColorUtils.swift in Sources */,
+				E434565E2643C5C700520426 /* MKTableViewCell.swift in Sources */,
+				E40531FD26365525001B35C0 /* ViewController.swift in Sources */,
+				E4730416266DC90300E8609A /* YLVipFirstViewController.swift in Sources */,
+				E40254E0266F4264009626EE /* YLSub.swift in Sources */,
+				E4485B8B2637F8010048F6C5 /* YLServerListViewController.swift in Sources */,
+				E41E533726536A0400329E67 /* YLLoading.swift in Sources */,
+				E43456272643C38200520426 /* WebViewVC.swift in Sources */,
+				E4053266263657AC001B35C0 /* YLServer.swift in Sources */,
+				E43456402643C4E700520426 /* YogaConstants.swift in Sources */,
+				E419B57326390FB300220F1B /* YLNetHelper.m in Sources */,
+				E43456562643C52800520426 /* LocationManager.swift in Sources */,
+				E434563B2643C3E000520426 /* ConsentAlert.swift in Sources */,
+				E434566D2643CB1B00520426 /* ToastWindow.swift in Sources */,
+				E405333D2636A2B2001B35C0 /* YLColor.swift in Sources */,
+				E434562F2643C3AC00520426 /* FaqDO.swift in Sources */,
+				E43456302643C3AC00520426 /* FaqVC.swift in Sources */,
+				E40531F926365525001B35C0 /* AppDelegate.swift in Sources */,
+				E434564E2643C52800520426 /* MailHelper.swift in Sources */,
+				E43456502643C52800520426 /* ViewUtils.swift in Sources */,
+				E43456392643C3E000520426 /* ConsentCard.swift in Sources */,
+				E405334A2636ADE6001B35C0 /* YLLabel.swift in Sources */,
+				E405331026369EFE001B35C0 /* YLHomeViewController.swift in Sources */,
+				E49E14DB267B2A3D0006AB0A /* YLVipFirstViewControllerV2.swift in Sources */,
+				E473043D266E190F00E8609A /* YLVipSecondViewController.swift in Sources */,
+				E405326C263657CC001B35C0 /* RootViewController.swift in Sources */,
+				E40531FB26365525001B35C0 /* SceneDelegate.swift in Sources */,
+				E434565D2643C5C700520426 /* MKCollectionViewCell.swift in Sources */,
+				E4485B882637E4AC0048F6C5 /* YLUserManager.swift in Sources */,
+				E434563F2643C4E700520426 /* ServerConstants.swift in Sources */,
+				E41407E4264CEB7000024D32 /* LiveLabel.swift in Sources */,
+				E49E14D1267B00430006AB0A /* YLVIPPaySucceedViewController.swift in Sources */,
+				E49E14DF267B2A5B0006AB0A /* YLVipSecondViewControllerV2.swift in Sources */,
+				E43456572643C52800520426 /* JumpAppHelper.swift in Sources */,
+				E43456322643C3AC00520426 /* FaqDefaultCell.swift in Sources */,
+				E43456702643CB1B00520426 /* ToastCenter.swift in Sources */,
+				E45C926A2669D9660081C747 /* YLIPAManager.swift in Sources */,
+				E434566E2643CB1B00520426 /* ToastView.swift in Sources */,
+				E43456522643C52800520426 /* AppUtils.swift in Sources */,
+				E43456382643C3E000520426 /* GADConsentHelper.swift in Sources */,
+				E490E45D264921F300CA54E5 /* YLDisconnectReportVC.swift in Sources */,
+				E4053264263657AC001B35C0 /* YLServerManager.swift in Sources */,
+				E4131429264E0E2E00CE17D1 /* YLThreeSDKConfig.swift in Sources */,
+				E43456662643C8CB00520426 /* RatingStarCard.swift in Sources */,
+				E434562E2643C3AC00520426 /* FaqExpandsionCell.swift in Sources */,
+				E43456602643C5C700520426 /* MKLayer.swift in Sources */,
+				E405330D26368F66001B35C0 /* YLServerArea.swift in Sources */,
+				E41407E6264CED8E00024D32 /* YoConfigKeys.swift in Sources */,
+				E405334C2636AE80001B35C0 /* Localized.swift in Sources */,
+				E434565F2643C5C700520426 /* MKButton.swift in Sources */,
+				E4053265263657AC001B35C0 /* YLUnity.swift in Sources */,
+				E40C94FA265F7F2000D44B24 /* YLEventHelper.swift in Sources */,
+				E470FF992643D3C800C2121E /* YLMoreViewController.swift in Sources */,
+				E434566F2643CB1B00520426 /* Toast.swift in Sources */,
+				E4240E5C264A19E0003CBD9C /* UIFullScreeAlert.swift in Sources */,
+				E43456552643C52800520426 /* InviteFriendsUtil.swift in Sources */,
+				E43456652643C8CB00520426 /* RatingStarAlert.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E405322A263656EC001B35C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E405324B2636574A001B35C0 /* SwiftyUserDefaults.swift in Sources */,
+				E40532512636574A001B35C0 /* YGLogger.swift in Sources */,
+				E40532482636574A001B35C0 /* YgCommonDefaultKey.swift in Sources */,
+				E405324A2636574A001B35C0 /* YGCommonInit.swift in Sources */,
+				E405324C2636574A001B35C0 /* CryptoUtils.swift in Sources */,
+				E405324E2636574A001B35C0 /* YGCommonHelper.swift in Sources */,
+				E405324F2636574A001B35C0 /* SecretKeyGenerator.swift in Sources */,
+				E40532492636574A001B35C0 /* SocksSecurityUtil.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4053271263657EF001B35C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E405328826365808001B35C0 /* Pollution.swift in Sources */,
+				E4485B7E2637BAE40048F6C5 /* YLVPNManager.swift in Sources */,
+				E405328926365808001B35C0 /* YLVPNConfigManager.swift in Sources */,
+				E496A301264E7D9900988BBF /* YLIPCServer.m in Sources */,
+				E44DEDA2264E870F001E39B3 /* YLIPCClient.m in Sources */,
+				E405328A26365808001B35C0 /* YLVPNConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E40532E426365D8C001B35C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E40532ED26365D8C001B35C0 /* PacketTunnelProvider.m in Sources */,
+				E40532FC26365E3B001B35C0 /* dns.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4AECE8F264BA735006CC0EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4AECEA0264BA7BE006CC0EF /* YLADMainManager.swift in Sources */,
+				E40C94FC265F7FFE00D44B24 /* YLADUnit.swift in Sources */,
+				E4AECEA6264BAFDE006CC0EF /* YLADMainManagerConfig.swift in Sources */,
+				E4AECEA4264BA900006CC0EF /* YLADBasePlatform.swift in Sources */,
+				E4AECEA2264BA8B3006CC0EF /* YLAdAdMob.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4053234263656EC001B35C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E405322D263656EC001B35C0 /* YGCommon */;
+			targetProxy = E4053233263656EC001B35C0 /* PBXContainerItemProxy */;
+		};
+		E405327B263657EF001B35C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4053274263657EF001B35C0 /* YLVPNCommon */;
+			targetProxy = E405327A263657EF001B35C0 /* PBXContainerItemProxy */;
+		};
+		E40532A3263658E6001B35C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ShadowPath;
+			targetProxy = E40532A2263658E6001B35C0 /* PBXContainerItemProxy */;
+		};
+		E40532F126365D8C001B35C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E40532E726365D8C001B35C0 /* Tunnel */;
+			targetProxy = E40532F026365D8C001B35C0 /* PBXContainerItemProxy */;
+		};
+		E41E49B3264B7642003DEF31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4053274263657EF001B35C0 /* YLVPNCommon */;
+			targetProxy = E41E49B2264B7642003DEF31 /* PBXContainerItemProxy */;
+		};
+		E4AECE99264BA735006CC0EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4AECE92264BA735006CC0EF /* YLADCommon */;
+			targetProxy = E4AECE98264BA735006CC0EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E40531FE26365525001B35C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E40531FF26365525001B35C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E405320326365526001B35C0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E405320426365526001B35C0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E405334E2636B081001B35C0 /* Countries.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E405334F2636B081001B35C0 /* de */,
+				E40533532636B081001B35C0 /* en */,
+				E40533592636B081001B35C0 /* fr */,
+			);
+			name = Countries.strings;
+			sourceTree = "<group>";
+		};
+		E40533502636B081001B35C0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E40533512636B081001B35C0 /* de */,
+				E40533522636B081001B35C0 /* ar */,
+				E40533542636B081001B35C0 /* en */,
+				E40533552636B081001B35C0 /* uk */,
+				E40533562636B081001B35C0 /* es */,
+				E40533572636B081001B35C0 /* it */,
+				E40533582636B081001B35C0 /* ru */,
+				E405335A2636B081001B35C0 /* fr */,
+				E405335B2636B081001B35C0 /* id */,
+				E405335C2636B081001B35C0 /* th */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E405320726365526001B35C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E405320826365526001B35C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E405320A26365526001B35C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE37040232CCD21BEDEE24DC /* Pods-bypass-melon-vpn-ios.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "bypass-melon-vpn-ios/bypass-melon-vpn-ios.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2.0;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MLZM282Y35;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "bypass-melon-vpn-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.2.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AIFlatSwitch\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Adjust\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"CryptoSwift\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCoreDiagnostics\"",
+					"-framework",
+					"\"FirebaseCrashlytics\"",
+					"-framework",
+					"\"FirebaseInstallations\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleDataTransport\"",
+					"-framework",
+					"\"GoogleMobileAds\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"IDZSwiftCommonCrypto\"",
+					"-framework",
+					"\"KeychainAccess\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"PersonalizedAdConsent\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Reachability\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SwiftyBeaver\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"UserMessagingPlatform\"",
+					"-framework",
+					"\"WebKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-framework",
+					"\"pop\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-weak_framework",
+					"\"CoreTelephony\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"-weak_framework",
+					"\"WebKit\"",
+					"-weak_framework",
+					"\"iAd\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vpnbottle.melon.unblock.fast.vpn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "bypass-melon-vpn-ios/YLServer/bypass-melon-vpn-ios-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E405320B26365526001B35C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E7B56C3C307798A4CC35771 /* Pods-bypass-melon-vpn-ios.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "bypass-melon-vpn-ios/bypass-melon-vpn-ios.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2.0;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MLZM282Y35;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "bypass-melon-vpn-ios/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.2.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AIFlatSwitch\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Adjust\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"CryptoSwift\"",
+					"-framework",
+					"\"FBLPromises\"",
+					"-framework",
+					"\"FirebaseAnalytics\"",
+					"-framework",
+					"\"FirebaseCore\"",
+					"-framework",
+					"\"FirebaseCoreDiagnostics\"",
+					"-framework",
+					"\"FirebaseCrashlytics\"",
+					"-framework",
+					"\"FirebaseInstallations\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"GoogleAppMeasurement\"",
+					"-framework",
+					"\"GoogleDataTransport\"",
+					"-framework",
+					"\"GoogleMobileAds\"",
+					"-framework",
+					"\"GoogleUtilities\"",
+					"-framework",
+					"\"IDZSwiftCommonCrypto\"",
+					"-framework",
+					"\"KeychainAccess\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"MediaPlayer\"",
+					"-framework",
+					"\"MessageUI\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"PersonalizedAdConsent\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Reachability\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"StoreKit\"",
+					"-framework",
+					"\"SwiftyBeaver\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"UserMessagingPlatform\"",
+					"-framework",
+					"\"WebKit\"",
+					"-framework",
+					"\"nanopb\"",
+					"-framework",
+					"\"pop\"",
+					"-weak_framework",
+					"\"AdSupport\"",
+					"-weak_framework",
+					"\"CoreTelephony\"",
+					"-weak_framework",
+					"\"JavaScriptCore\"",
+					"-weak_framework",
+					"\"SafariServices\"",
+					"-weak_framework",
+					"\"WebKit\"",
+					"-weak_framework",
+					"\"iAd\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.vpnbottle.melon.unblock.fast.vpn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "bypass-melon-vpn-ios/YLServer/bypass-melon-vpn-ios-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E4053238263656EC001B35C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 875F84B7A6C4B3CF17C8C6CE /* Pods-YGCommon.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MLZM282Y35;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = YGCommon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yogavpn.YGCommon;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4053239263656EC001B35C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB49651137381BF5768EB765 /* Pods-YGCommon.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MLZM282Y35;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = YGCommon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yogavpn.YGCommon;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E405327F263657EF001B35C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MLZM282Y35;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = YLVPNCommon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yolonet.YLVPNCommon;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4053280263657EF001B35C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MLZM282Y35;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = YLVPNCommon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yolonet.YLVPNCommon;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E40532F326365D8C001B35C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C81329E913C5CE249E51D463 /* Pods-Tunnel.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Tunnel/Tunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2.0;
+				DEVELOPMENT_TEAM = MLZM282Y35;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libs",
+				);
+				INFOPLIST_FILE = Tunnel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vpnbottle.melon.unblock.fast.vpn.tunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E40532F426365D8C001B35C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE61C8E6F5B463FF679477DE /* Pods-Tunnel.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Tunnel/Tunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.2.0;
+				DEVELOPMENT_TEAM = MLZM282Y35;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libs",
+				);
+				INFOPLIST_FILE = Tunnel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vpnbottle.melon.unblock.fast.vpn.tunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E4AECE9C264BA735006CC0EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0C8866D589B5970AE44284B /* Pods-YLADCommon.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MLZM282Y35;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = YLADCommon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yolonet.YLADCommon;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4AECE9D264BA735006CC0EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00BBC3FFD06A0D97A3D777EB /* Pods-YLADCommon.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = MLZM282Y35;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = YLADCommon/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.yolonet.YLADCommon;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E40531F026365525001B35C0 /* Build configuration list for PBXProject "bypass-melon-vpn-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E405320726365526001B35C0 /* Debug */,
+				E405320826365526001B35C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E405320926365526001B35C0 /* Build configuration list for PBXNativeTarget "bypass-melon-vpn-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E405320A26365526001B35C0 /* Debug */,
+				E405320B26365526001B35C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E405323A263656EC001B35C0 /* Build configuration list for PBXNativeTarget "YGCommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4053238263656EC001B35C0 /* Debug */,
+				E4053239263656EC001B35C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E405327E263657EF001B35C0 /* Build configuration list for PBXNativeTarget "YLVPNCommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E405327F263657EF001B35C0 /* Debug */,
+				E4053280263657EF001B35C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E40532F526365D8C001B35C0 /* Build configuration list for PBXNativeTarget "Tunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E40532F326365D8C001B35C0 /* Debug */,
+				E40532F426365D8C001B35C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4AECE9E264BA735006CC0EF /* Build configuration list for PBXNativeTarget "YLADCommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4AECE9C264BA735006CC0EF /* Debug */,
+				E4AECE9D264BA735006CC0EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E40531ED26365525001B35C0 /* Project object */;
+}
