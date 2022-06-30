@@ -87,7 +87,9 @@
                     
                     if([[RMWordManager shareManager] isExcudleWord:name] == false){
                         if(_isGeneralNewWord){
-                            NSString *newname = [NSString stringWithFormat:@"%@->%@",name,[RMWordManager.shareManager generalNewWord:2]];
+                            //OC符号一律转成小写，因OC桥接Swift的符号首字母自动转成小写了。
+                            NSString *newword = [[RMWordManager.shareManager generalNewWord:2] lowercaseString];
+                            NSString *newname = [NSString stringWithFormat:@"%@->%@",name,newword];
                             
                             [self.arrayOfMethods addObject:newname];
                         }else{
@@ -138,7 +140,8 @@
                             
                             if([[RMWordManager shareManager] isExcudleWord:name] == false){
                                 if(_isGeneralNewWord){
-                                    NSString *newname = [NSString stringWithFormat:@"%@->%@",name,[RMWordManager.shareManager generalNewWord:0]];
+                                    
+                                    NSString *newname = [NSString stringWithFormat:@"%@->%@",name,[RMWordManager.shareManager generalNewWord:0].lowercaseString];
                                     [self.arrayOfClassName addObject:newname];
                                 }else{
                                     [self.arrayOfClassName addObject:name];
@@ -161,7 +164,7 @@
                           
                             if([[RMWordManager shareManager] isExcudleWord:name] == false){
                                 if(_isGeneralNewWord){
-                                    NSString *newname = [NSString stringWithFormat:@"%@->%@",name,[RMWordManager.shareManager generalNewWord:0]];
+                                    NSString *newname = [NSString stringWithFormat:@"%@->%@",name,[RMWordManager.shareManager generalNewWord:0].lowercaseString];
                                     [self.arrayOfClassName addObject:newname];
                                 }else{
                                     [self.arrayOfClassName addObject:name];
@@ -188,7 +191,7 @@
                             }
                             if([[RMWordManager shareManager] isExcudleWord:name] == false){
                                 if(_isGeneralNewWord){
-                                    NSString *newname = [NSString stringWithFormat:@"%@->%@",name,[RMWordManager.shareManager generalNewWord:1]];
+                                    NSString *newname = [NSString stringWithFormat:@"%@->%@",name,[RMWordManager.shareManager generalNewWord:1].lowercaseString];
                                     [self.arrayOfPropertys addObject:newname];
                                 }else{
                                     [self.arrayOfPropertys addObject:name];
